@@ -56,7 +56,7 @@ header {
 .banner {
   position: absolute;
   top: 35%;
-  left: 15%;
+  left: 13%;
   color: white;
   animation: Rotate_degree 2s;  
 }
