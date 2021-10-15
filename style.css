@@ -40,12 +40,11 @@
     transform: translateX(20em);
   }
 }
-@keyframes js {
-  0% {
-  }
+html{
+    overflow-x: hidden;
 }
 body {
-  overflow: hidden;
+  position: relative;
 }
 .hamburguer {
   background-color: rgba(34, 34, 34, 0);
@@ -55,8 +54,8 @@ body {
   border-radius: 10%;
   z-index: 100;
   top: 5rem;
-  right: 10.3rem;
-  margin: 5px 3px;
+  right: 10%;
+  margin: 5px 150px 5px 5px;
   cursor: pointer;
   transition-duration: 1s;
 }
@@ -154,7 +153,7 @@ header {
   right: -20em;
   transition-duration: 1s;
 }
-.sidebar.show{
+.show-menu .sidebar{
     right: 0%;
     
 }
