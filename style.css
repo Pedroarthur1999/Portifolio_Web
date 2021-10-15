@@ -34,10 +34,10 @@
 }
 @keyframes xTranslate {
   0% {
-    transform: translateX(0);
+    transform: translateX(15em);
   }
   100% {
-    transform: translateX(250px);
+    transform: translateX(20em);
   }
 }
 @keyframes js {
@@ -149,14 +149,14 @@ header {
   height: 100%;
   position: absolute;
   background-color: rgba(119, 0, 231, 0.274);
+  overflow: hidden;
   top: 0%;
-  right: 0%;
-  animation: xTranslate 2s;
+  right: -20em;
   transition-duration: 1s;
 }
 .sidebar.show{
-    right: -20em;
-
+    right: 0%;
+    
 }
 .sidebar:hover {
     transition-duration: 1s;
