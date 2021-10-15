@@ -2,50 +2,83 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css);
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes zoom{
-    
-    0%{
-        transform: scale(1.3);
-    }
-    100%{
-        transform: scale(1);
-    }
-}
-header {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
+@keyframes zoom {
+  0% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 @keyframes moveY {
-    
-    0%{
-        transform: translateY(350px);
-    }
-   100%{
-       transform: translateY(0);
-   }
+  0% {
+    transform: translateY(350px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
-@keyframes Rotate_degree{
-    0%{
-        transform: rotateY(-40deg);
-        opacity: 0;
-    }
-    100%{
-        transform: rotateY(0deg);
-        opacity: 1;
-    }
+@keyframes Rotate_degree {
+  0% {
+    transform: rotateY(-40deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
 }
+@keyframes xTranslate {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(250px);
+  }
+}
+@keyframes js {
+  0% {
+  }
+}
+body {
+  overflow: hidden;
+}
+.hamburguer {
+  background-color: rgba(34, 34, 34, 0);
+  box-shadow: 2px 2px 2px rgba(94, 94, 94, 0.781);
+  width: 2.3rem;
+  height: 2rem;
+  position: fixed;
+  border-radius: 10%;
+  z-index: 100;
+  top: 5rem;
+  right: 10.3rem;
+  margin: 5px 3px;
+  cursor: pointer;
+}
+.line {
+  margin: 5.5px 7px;
+  width: 1.4rem;
+  height: 3px;
+  background-color: cornsilk;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
 .image-wrapper {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: rgba(43, 41, 41, 0.986);
-  animation: zoom 20s;
+  background-color: rgba(41, 41, 43, 0.986);
+  animation: zoom 15s;
 }
 .image-wrapper img {
   width: 100%;
@@ -58,7 +91,7 @@ header {
   top: 35%;
   left: 13%;
   color: white;
-  animation: Rotate_degree 2s;  
+  animation: Rotate_degree 2s;
 }
 .banner h1 {
   font-family: "Baloo 2";
@@ -68,7 +101,6 @@ header {
   margin-bottom: 24px;
   line-height: 3.5rem;
   animation: moveY 1s;
-
 }
 .banner p {
   font-family: "Josefin Slab";
@@ -76,7 +108,6 @@ header {
   text-shadow: 8px 8px 15px rgba(94, 94, 94, 0.432);
   margin-bottom: 24px;
   animation: moveY 2s;
-
 }
 .banner button {
   width: 200px;
@@ -86,17 +117,78 @@ header {
   background: -webkit-linear-gradient(to right, #a044ff, #6a3893);
   background: linear-gradient(to right, #6000c0, #5f179b);
   text-transform: uppercase;
-  border-radius: 10%;
+  -webkit-border-top-left-radius: 40px;
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 20px;
+  -moz-border-radius-topleft: 40px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 20px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 20px;
   border: 0;
   letter-spacing: 1px;
   font-size: 10pt;
   cursor: pointer;
   transition: all 1s;
-  opacity: 1;
+  opacity: 0.6;
   animation: moveY 3s;
 }
 .banner button:hover {
-color: rgb(255, 255, 255);
-  opacity: 0.8;
+  color: rgb(255, 255, 255);
+  opacity: 1;
   transition: all 1s;
+}
+.sidebar {
+  width: 250px;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(119, 0, 231, 0.274);
+  top: 0%;
+  right: 0%;
+  animation: xTranslate 2s;
+  animation-direction: reverse;
+  transition-duration: 1s;
+}
+.sidebar:hover {
+    transition-duration: 1s;
+    background-color: rgba(119, 0, 231, 0.945);
+}
+.menu a {
+  top: 20%;
+  text-decoration: none;
+  color: white;
+  transition-duration: 0.7s;
+}
+.menu a:hover {
+  transition-duration: 0.7s;
+  color: rgb(126, 125, 126);
+}
+.menu {
+  margin: 60% 50px;
+}
+.menu li {
+  font-family: "Baloo 2";
+  margin-bottom: 50px;
+  list-style: none;
+  font-size: 18pt;
+}
+.social {
+  z-index: 100;
+  position: absolute;
+  right: 4rem;
+  bottom: 5rem;
+}
+.social i {
+  z-index: 100;
+  margin: 0 10px 0 0;
+  text-decoration: none;
+  list-style: none;
+  color: rgb(255, 255, 255);
+  font-size: 24pt;
+  transition-duration: 0.5s;
+}
+.social i:hover {
+  transition-duration: 0.5s;
+  color: rgb(126, 125, 126);
 }
