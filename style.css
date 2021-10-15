@@ -49,7 +49,6 @@ body {
 }
 .hamburguer {
   background-color: rgba(34, 34, 34, 0);
-  box-shadow: 2px 2px 2px rgba(94, 94, 94, 0.781);
   width: 2.3rem;
   height: 2rem;
   position: fixed;
@@ -59,12 +58,18 @@ body {
   right: 10.3rem;
   margin: 5px 3px;
   cursor: pointer;
+  transition-duration: 1s;
+}
+.hamburguer:hover{
+    transition-duration: 1s;
+    box-shadow: 2px 2px 2px rgba(94, 94, 94, 0.980);
 }
 .line {
   margin: 5.5px 7px;
   width: 1.4rem;
   height: 3px;
   background-color: cornsilk;
+  box-shadow: 2px 2px 2px rgba(94, 94, 94, 0.781);
 }
 header {
   width: 100%;
@@ -78,7 +83,7 @@ header {
   height: 100%;
   overflow: hidden;
   background-color: rgba(41, 41, 43, 0.986);
-  animation: zoom 15s;
+  animation: zoom 25s;
 }
 .image-wrapper img {
   width: 100%;
@@ -147,15 +152,18 @@ header {
   top: 0%;
   right: 0%;
   animation: xTranslate 2s;
-  animation-direction: reverse;
   transition-duration: 1s;
+}
+.sidebar.show{
+    right: -20em;
+
 }
 .sidebar:hover {
     transition-duration: 1s;
-    background-color: rgba(119, 0, 231, 0.945);
+    background-color: rgba(119, 0, 231, 0.800);
 }
 .menu a {
-  top: 20%;
+  top: 30%;
   text-decoration: none;
   color: white;
   transition-duration: 0.7s;
@@ -168,8 +176,8 @@ header {
   margin: 60% 50px;
 }
 .menu li {
-  font-family: "Baloo 2";
-  margin-bottom: 50px;
+  font-family: "Mulish";
+  margin-bottom: 40px;
   list-style: none;
   font-size: 18pt;
 }
