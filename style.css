@@ -54,10 +54,29 @@ body {
   border-radius: 10%;
   z-index: 100;
   top: 5rem;
-  right: 10%;
-  margin: 5px 150px 5px 5px;
+  right: 2%;
+  margin: 5px 5px 5px 5px;
   cursor: pointer;
-  transition-duration: 1s;
+  transition-duration:all 1s;
+}
+.show-menu .hamburguer{
+
+  right: 20%;
+
+}
+.show-menu #line1{
+    transform: rotate(45deg) translate(0.65rem ,-.05rem);
+    transition: .3s;
+    
+}
+.show-menu #line2{
+    opacity: 0;
+    visibility: hidden;
+}
+.show-menu #line3{
+transform: rotate(-45deg) translate(.8rem , -.1rem);
+transition: .3s;
+
 }
 .hamburguer:hover{
     transition-duration: 1s;
