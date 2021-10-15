@@ -57,7 +57,7 @@ body {
   right: 2%;
   margin: 5px 5px 5px 5px;
   cursor: pointer;
-  transition-duration:all 1s;
+  transition:all 1s;
 }
 .show-menu .hamburguer{
 
@@ -66,16 +66,17 @@ body {
 }
 .show-menu #line1{
     transform: rotate(45deg) translate(0.65rem ,-.05rem);
-    transition: .3s;
+    transition:all .5s;
     
 }
 .show-menu #line2{
+    transition:all .5s;
     opacity: 0;
     visibility: hidden;
 }
 .show-menu #line3{
 transform: rotate(-45deg) translate(.8rem , -.1rem);
-transition: .3s;
+transition:all .5s;
 
 }
 .hamburguer:hover{
