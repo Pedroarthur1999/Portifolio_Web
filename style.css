@@ -60,7 +60,6 @@ body {
   transition:all 1s;
 }
 .show-menu .hamburguer{
-
   right: 20%;
 
 }
@@ -82,6 +81,9 @@ transition:all .5s;
 .hamburguer:hover{
     transition-duration: 1s;
     box-shadow: 2px 2px 2px rgba(94, 94, 94, 0.980);
+}
+.show-menu .line{
+    box-shadow: 2px 2px 2px rgba(94, 94, 94, 0);
 }
 .line {
   margin: 5.5px 7px;
@@ -110,12 +112,14 @@ header {
   object-fit: cover;
   opacity: 0.8;
 }
+
 .banner {
   position: absolute;
   top: 35%;
   left: 13%;
   color: white;
   animation: Rotate_degree 2s;
+  margin-right: 5px;
 }
 .banner h1 {
   font-family: "Baloo 2";
@@ -164,10 +168,11 @@ header {
   transition: all 1s;
 }
 .sidebar {
-  width: 250px;
+  width: 20rem;
   height: 100vh;
   position: absolute;
   background-color: rgba(119, 0, 231, 0.274);
+  z-index: 80;
   overflow: hidden;
   top: 0%;
   right: -20em;
