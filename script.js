@@ -9,7 +9,7 @@ var conteudos = document.querySelector(".menu-item-2");
 
 conteudos.addEventListener('click', function(){
      
-    var visivel = document.querySelector(".container").classList.toggle("visivel");
+    var visivel = document.querySelector(".container").classList.add("visivel");
    
 
 })
