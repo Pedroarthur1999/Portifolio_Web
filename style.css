@@ -61,6 +61,7 @@ body {
 }
 .show-menu .hamburguer{
   right: 20%;
+  background-color: rgba(94, 94, 94, 0.000)
 
 }
 .show-menu #line1{
@@ -80,7 +81,10 @@ transition:all .5s;
 }
 .hamburguer:hover{
     transition-duration: 1s;
-    box-shadow: 2px 2px 2px rgba(94, 94, 94, 0.980);
+    background-color: rgba(94, 94, 94, 0.493);
+}
+.container.show-menu .hamburguer:hover{
+    background-color: rgba(219, 3, 3, 0);
 }
 .show-menu .line{
     box-shadow: 2px 2px 2px rgba(94, 94, 94, 0);
@@ -145,13 +149,13 @@ header {
   background: -webkit-linear-gradient(to right, #a044ff, #6a3893);
   background: linear-gradient(to right, #6000c0, #5f179b);
   text-transform: uppercase;
-  -webkit-border-top-left-radius: 40px;
+  -webkit-border-top-left-radius: 30px;
   -webkit-border-top-right-radius: 5px;
   -webkit-border-bottom-right-radius: 20px;
-  -moz-border-radius-topleft: 40px;
+  -moz-border-radius-topleft: 30px;
   -moz-border-radius-topright: 5px;
   -moz-border-radius-bottomright: 20px;
-  border-top-left-radius: 40px;
+  border-top-left-radius: 30px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 20px;
   border: 0;
@@ -208,7 +212,7 @@ header {
 .social {
   z-index: 100;
   position: absolute;
-  right: 4rem;
+  right: 6rem;
   bottom: 5rem;
 }
 .social i {
