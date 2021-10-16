@@ -5,6 +5,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 @keyframes zoom {
   0% {
@@ -40,8 +43,8 @@
     transform: translateX(20em);
   }
 }
-html{
-    overflow-x: hidden;
+html {
+  overflow-x: hidden;
 }
 body {
   position: relative;
@@ -57,37 +60,38 @@ body {
   right: 2%;
   margin: 5px 5px 5px 5px;
   cursor: pointer;
-  transition:all 1s;
+  transition: all 1s;
 }
-.show-menu .hamburguer{
+a{
+    text-decoration: none;
+}
+.show-menu .hamburguer {
   right: 20%;
-  background-color: rgba(94, 94, 94, 0.000)
-
+  background-color: rgba(94, 94, 94, 0);
 }
-.show-menu #line1{
-    transform: rotate(45deg) translate(0.65rem ,-.05rem);
-    transition:all .5s;
-    
+.show-menu #line1 {
+  transform: rotate(45deg) translate(0.65rem, -0.05rem);
+  transition: all 0.5s;
 }
-.show-menu #line2{
-    transition:all .5s;
-    opacity: 0;
-    visibility: hidden;
+.show-menu #line2 {
+  transition: all 0.5s;
+  opacity: 0;
+  visibility: hidden;
 }
-.show-menu #line3{
-transform: rotate(-45deg) translate(.8rem , -.1rem);
-transition:all .5s;
-
+.show-menu #line3 {
+  transform: rotate(-45deg) translate(0.8rem, -0.1rem);
+  transition: all 0.5s;
 }
-.hamburguer:hover{
-    transition-duration: 1s;
-    background-color: rgba(94, 94, 94, 0.493);
+.hamburguer:hover {
+  transition-duration: 1s;
+  background-color: rgba(94, 94, 94, 0.425);
+  border-radius: 10%;
 }
-.container.show-menu .hamburguer:hover{
-    background-color: rgba(219, 3, 3, 0);
+.container.show-menu .hamburguer:hover {
+  background-color: rgba(219, 3, 3, 0);
 }
-.show-menu .line{
-    box-shadow: 2px 2px 2px rgba(94, 94, 94, 0);
+.show-menu .line {
+  box-shadow: 2px 2px 2px rgba(94, 94, 94, 0);
 }
 .line {
   margin: 5.5px 7px;
@@ -143,7 +147,6 @@ header {
 }
 .banner button {
   width: 200px;
-  color: whitesmoke;
   padding: 10px;
   font-family: "Baloo 2";
   background: -webkit-linear-gradient(to right, #a044ff, #6a3893);
@@ -166,6 +169,9 @@ header {
   opacity: 0.6;
   animation: moveY 3s;
 }
+.banner button a{
+    color: whitesmoke;
+}
 .banner button:hover {
   color: rgb(255, 255, 255);
   opacity: 1;
@@ -174,21 +180,20 @@ header {
 .sidebar {
   width: 20rem;
   height: 100vh;
-  position: absolute;
-  background-color: rgba(119, 0, 231, 0.274);
+  position: fixed;
+  background-color: rgba(62, 0, 231, 0.596);
   z-index: 80;
   overflow: hidden;
   top: 0%;
   right: -20em;
   transition-duration: 1s;
 }
-.show-menu .sidebar{
-    right: 0%;
-    
+.show-menu .sidebar {
+  right: 0%;
 }
 .sidebar:hover {
-    transition-duration: 1s;
-    background-color: rgba(119, 0, 231, 0.800);
+  transition-duration: 1s;
+  background-color: rgb(62, 0, 231);
 }
 .menu a {
   top: 30%;
@@ -227,4 +232,65 @@ header {
 .social i:hover {
   transition-duration: 0.5s;
   color: rgb(126, 125, 126);
+}
+.sessao-conhecimentos {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(231, 230, 230);  
+}
+.secao-header {
+  text-align: center;
+  font-size: 20pt;
+  font-family: "Baloo 2";
+}
+.traco {
+  width: 300px;
+  height: 3px;
+  background-color: #6000c0;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.conhecimentos {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(8, 4rem);
+}
+.conhecimento-texto {
+  text-align: justify;
+}
+.conhecimento-header {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 5px;
+  border-bottom: solid 2px #6000c0;
+  color: #370f83;
+}
+.conhecimento:nth-child(1) {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+}
+
+.conhecimento:nth-child(2) {
+  grid-column: 8 / 10;
+  grid-row: 1 / 3;
+}
+
+.conhecimento:nth-child(3) {
+  grid-column: 13 / 15;
+  grid-row: 2 / 3;
+}
+.conhecimento:nth-child(4) {
+  grid-column: 2 / 4;
+  grid-row: 6 / 8;
+}
+
+.conhecimento:nth-child(5) {
+  grid-column: 8 / 10;
+  grid-row: 7 / 8;
+}
+
+.conhecimento:nth-child(6) {
+  grid-column: 13 / 15;
+  grid-row: 6 / 8;
 }
