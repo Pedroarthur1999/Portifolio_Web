@@ -237,6 +237,12 @@ header {
   width: 100%;
   height: 100vh;
   background-color: rgb(231, 230, 230);  
+  opacity: 0;
+}
+.visivel .sessao-conhecimentos{
+    transition:all 1s;
+    opacity: 1;
+    
 }
 .secao-header {
   text-align: center;
@@ -265,6 +271,8 @@ header {
   margin-bottom: 5px;
   border-bottom: solid 2px #6000c0;
   color: #370f83;
+  display: flex;
+  align-items: center;
 }
 .conhecimento:nth-child(1) {
   grid-column: 2 / 4;
