@@ -1,39 +1,40 @@
-
-let hamburguer = document.querySelector(".hamburguer");
+var hamburguer = document.querySelector(".hamburguer");
 
 hamburguer.addEventListener("click", function () {
-  let sideBar = document
+  var sideBar = document
     .querySelector(".container")
     .classList.toggle("show-menu");
 });
-let conteudos = document.querySelector(".menu-item-2");
+var conteudos = document.querySelector(".menu-item-2");
 
 conteudos.addEventListener("click", function () {
-  let visivel = document.querySelector(".container").classList.add("visivel");
+  var visivel = document.querySelector(".container").classList.add("visivel");
 });
-let conteudo = document.querySelector(".botao");
+
+/*var conteudo = document.querySelector(".botao");
 
 conteudo.addEventListener("click", function () {
-  let visivel2 = document.querySelector(".container").classList.add("visivel");
+  var visivel2 = document.querySelector(".container").classList.add("visivel");
 });
+*/
+const menuLinks = document.querySelectorAll('.menu a[href^="#"]');
 
-let menuLinks = document.querySelectorAll('.menu a[href^="#"]');
-
-console.log(menuLinks);
-
-function getElementByTop(element) {
+function getDistanceFromTheTop(element) {
   const id = element.getAttribute("href");
   return document.querySelector(id).offsetTop;
 }
 
+
 function scrollToSection(event) {
   event.preventDefault();
-  const distanceFromTheTop = getElementByTop(event.target);
-  smoothScrollTo(0, distanceFromTheTop,let00);
+  const distanceFromTheTop = getDistanceFromTheTop(event.target);
+  smoothScrollTo(0, distanceFromTheTop);
 }
+
 menuLinks.forEach((link) => {
   link.addEventListener("click", scrollToSection);
 });
+
 function smoothScrollTo(endX, endY, duration) {
   const startX = window.scrollX || window.pageXOffset;
   const startY = window.scrollY || window.pageYOffset;
