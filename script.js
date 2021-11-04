@@ -6,10 +6,10 @@ hamburguer.addEventListener("click", function () {
 });
 let conteudos = document.querySelector(".menu-item-2")
 
-conteudos.addEventListener("click", function () {
+/*conteudos.addEventListener("click", function () {
   let visivel = document.querySelector(".container").classList.add("visivel");
 });
-
+*/
 /*var conteudo = document.querySelector(".botao");
 
 conteudo.addEventListener("click", function () {
