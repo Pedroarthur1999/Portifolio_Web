@@ -1,10 +1,11 @@
-
-let hamburguer = document.querySelector(".hamburguer")
+let hamburguer = document.querySelector(".hamburguer");
 
 hamburguer.addEventListener("click", function () {
-  let sideBar = document.querySelector(".container").classList.toggle("show-menu");
+  let sideBar = document
+    .querySelector(".container")
+    .classList.toggle("show-menu");
 });
-let conteudos = document.querySelector(".menu-item-2")
+let conteudos = document.querySelector(".menu-item-2");
 
 /*conteudos.addEventListener("click", function () {
   let visivel = document.querySelector(".container").classList.add("visivel");
@@ -22,7 +23,6 @@ function getDistanceFromTheTop(element) {
   const id = element.getAttribute("href");
   return document.querySelector(id).offsetTop;
 }
-
 
 function scrollToSection(event) {
   event.preventDefault();
@@ -60,3 +60,22 @@ function smoothScrollTo(endX, endY, duration) {
   }, 1000 / 60);
 }
 
+window.onscroll = function(){
+  myFunction()
+  visivel()
+};
+
+function myFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    document.getElementById("myP").className = "arrow-up";
+  } else {
+    document.getElementById("myP").className = "arrow";
+  }
+}
+
+function visivel(){
+  if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+    document.getElementById("teste").className = "conhecimentos";
+  } 
+
+}

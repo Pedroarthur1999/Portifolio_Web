@@ -42,6 +42,7 @@
           <h1>Web Developer & Front End</h1>
           <p>Pedro Arthur</p>
           <button class="botao" ><a href="">Saiba Mais</a></button>
+        
         </div>
       </header>
       <aside>
@@ -50,8 +51,8 @@
               <ul class="menu">
                 <li class="menu-item-1"><a href="#inicio">Home</a></li>
                 <li class="menu-item-2"> <a href="#secao-conhecimento">Conhecimentos</a></li>
-                <li class="menu-item"><a href="#projetos">Projetos</a></li>
-                <li class="menu-item"><a href="#contato2">Contato</a></li>
+                <li class="menu-item-3"><a href="#projetos">Projetos</a></li>
+                <li class="menu-item-4"><a href="#contato2">Contato</a></li>
               </ul>
             </nav>
             <div class="social">
@@ -73,15 +74,15 @@
 
 
         <div class="foto-conhecimento">
-          <figure><img src="_images/bg-section-conhecimentos (2).jpg" alt="dev"/></figure>
+        <!--<figure><img src="_images/bg-section-conhecimentos (2).jpg" alt="dev"/></figure>-->
         </div>
         <div class="secao-header" id="secao-conhecimento">
           
           <h2>Conhecimentos</h2>
-          
         </div>
-        <div class="traco"></div>
-          <div class="conhecimentos">
+          <div class="traco"></div>
+          
+        <div onscroll="visivel()" class="conhecimentos2" id="teste">
               <div class="conhecimento">
                 <div class="conhecimento-header">
                   <i class="fab fa-github"></i>
@@ -100,8 +101,8 @@
                     <h3>Html5</h3>
                 </div>
                 <p>
-                Lorem ipsum dolor,uptatibus saepe veritatis obcaecati nulla
-                repudiandae qui architecto? 
+                  <strong>HTML5</strong> é uma linguagem de marcação para a World Wide Web e é uma tecnologia chave da Internet, 
+                  originalmente proposto por Opera Software. É a quinta versão da linguagem HTML
                 </p>
               </div>
               <div class="conhecimento">
@@ -205,8 +206,13 @@
                       ><i class="fab fa-linkedin"></i>
                   </div>
                 </div>
-              </footer><!-- End  Footer -->
-
+              </footer>
+              <!-- End  Footer -->
+              <div class="arrow" id="myP">
+      
+             <a href="#"><i style="margin-bottom: -40px;" class="fas fa-arrow-up"></i></a>
+           
+            </div>
     </div>
     <script src="script.js"></script>
   </body>
