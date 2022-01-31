@@ -181,7 +181,7 @@ header {
   background: -webkit-linear-gradient(to right, #a044ff, #6a3893);
   background: linear-gradient(to right, #6000c0, #5f179b);
   opacity: 0;
-  transition: 3s;
+  transition: 1s;
 }
 .arrow-up{
   position: fixed;
