@@ -364,6 +364,9 @@ header {
   top: 0%;
   right: -20em;
   transition-duration: 1s;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 .show-menu .sidebar {
   right: 0%;
