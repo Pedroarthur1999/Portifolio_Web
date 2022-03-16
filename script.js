@@ -60,22 +60,51 @@ function smoothScrollTo(endX, endY, duration) {
   }, 1000 / 60);
 }
 
-window.onscroll = function(){
-  myFunction()
-  visivel()
+window.onscroll = function () {
+  myFunction();
+  visivel();
 };
 
 function myFunction() {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+  if (
+    document.body.scrollTop > 200 ||
+    document.documentElement.scrollTop > 200
+  ) {
     document.getElementById("myP").className = "arrow-up";
   } else {
     document.getElementById("myP").className = "arrow";
   }
 }
 
-function visivel(){
-  if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+function visivel() {
+  if (
+    document.body.scrollTop > 350 ||
+    document.documentElement.scrollTop > 350
+  ) {
     document.getElementById("teste").className = "conhecimentos";
-  } 
+  }
+}
 
+// efeito carregamento
+
+function spin() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+  setTimeout(function () {
+    document.querySelector(".spin").classList.toggle("-true");
+  }, 10);
+
+  setTimeout(function () {
+    document.querySelector(".spin").classList.remove("-true");
+  }, 1 * 1500);
+
+  setTimeout(function () {
+    document.querySelector(".cover").classList.toggle("-true");
+  }, 10);
+
+  setTimeout(function () {
+    document.querySelector(".cover").classList.toggle("-true");
+  }, 1500);
 }

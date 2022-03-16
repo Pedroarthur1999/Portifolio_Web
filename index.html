@@ -27,7 +27,9 @@
     <title>Portifolio Web</title>
   </head>
   <body>
+  
     <div class="container">
+      
       <div class="hamburguer">
         <div class="line" id="line1"></div>
         <div class="line" id="line2"></div>
@@ -35,17 +37,23 @@
       </div>
 
       <header>
+
         <div class="image-wrapper" id="inicio">
           <img src="_images/bg-full.jpg" alt="Developer" />
         </div>
-        <div class="banner">
-          <h1>Web Developer & Front End</h1>
-          <p>Pedro Arthur</p>
-          <button class="botao" ><a href="">Saiba Mais</a></button>
-        
+        <div class="cover">
+          <div class="spin"> </div>
         </div>
+          <div class="banner">
+              <h1>Web Developer & Front End</h1>
+              <p>Pedro Arthur</p>
+              <button class="botao" ><a href="">Saiba Mais</a></button>
+          
+          
+          </div>
+       
       </header>
-      <aside>
+      <aside> 
           <div class="sidebar">
             <nav>
               <ul class="menu">
@@ -90,8 +98,8 @@
                 </div>
                 <div class="conhecimento-texto">
                     <p>
-                    Lorem ipsum dolor,uptatibus saepe veritatis obcaecati nulla
-                    repudiandae qui architecto? 
+                      GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. Ele permite que programadores, utilitários ou qualquer usuário cadastrado na plataforma
+                       contribuam em projetos privados e/ou Open Source.
                     </p>
                 </div>
               </div>
@@ -101,8 +109,10 @@
                     <h3>Html5</h3>
                 </div>
                 <p>
-                  <strong>HTML5</strong> é uma linguagem de marcação para a World Wide Web e é uma tecnologia chave da Internet, 
-                  originalmente proposto por Opera Software. É a quinta versão da linguagem HTML
+                  <div class="conhecimento-texto">
+                    é uma linguagem de marcação para a World Wide Web e é uma tecnologia chave da Internet,
+                    originalmente proposto por Opera Software.
+                  </div>
                 </p>
               </div>
               <div class="conhecimento">
@@ -112,8 +122,8 @@
                 </div>
                 <div class="conhecimento-texto">
                     <p>
-                    Lorem ipsum dolor,uptatibus saepe veritatis obcaecati nulla
-                    repudiandae qui architecto? 
+                      CSS3 é a terceira mais nova versão das famosas Cascading Style Sheets, pela qual se define estilos para um projeto web. Com efeitos de transição, imagem, imagem de fundo/background e outros,
+                       pode-se criar estilos únicos para seus projetos web, alterando diversos aspectos de design no layout da página.
                     </p>
                 </div>
               </div>
@@ -208,12 +218,13 @@
                 </div>
               </footer>
               <!-- End  Footer -->
-              <div class="arrow" id="myP">
+              <div class="arrow" id="myP" onclick="spin()">
       
-             <a href="#"><i style="margin-bottom: -40px;" class="fas fa-arrow-up"></i></a>
+             <i class="fas fa-arrow-up"></i>
            
             </div>
     </div>
+  
     <script src="script.js"></script>
   </body>
 </html>
