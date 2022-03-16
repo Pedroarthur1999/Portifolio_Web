@@ -163,7 +163,7 @@ body {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to right, #0f0d11, #150522);
+  background: linear-gradient(to right, #0f0d11dc, #150522dc);
   z-index: 10000;
   transition: all .2s;
    align-items: center;
