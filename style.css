@@ -163,23 +163,20 @@ body {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background: fixed;
-  background-color: #000000f6;
+  background: linear-gradient(to right, #0f0d11, #150522);
   z-index: 10000;
   transition: all .2s;
+   align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .spin.-true {
-  position: fixed;
-  top: 49%;
-  left: 40rem;
   width: 80px;
   height: 80px;
   border: 6px solid #e5e5e5;
   border-radius: 50%;
-  border-top-color: aqua;
-  display: flex;
-  justify-content: center;
+  border-top-color: rgb(0, 60, 255);
   color: wheat;
   animation: spin 1s infinite;
   transition: all .2s;

@@ -94,17 +94,17 @@ function spin() {
   });
   setTimeout(function () {
     document.querySelector(".spin").classList.toggle("-true");
-  }, 10);
+  }, 0);
 
   setTimeout(function () {
     document.querySelector(".spin").classList.remove("-true");
-  }, 1 * 1500);
+  }, 1 * 1000);
 
   setTimeout(function () {
     document.querySelector(".cover").classList.toggle("-true");
-  }, 10);
+  }, 0);
 
   setTimeout(function () {
     document.querySelector(".cover").classList.toggle("-true");
-  }, 1500);
+  }, 1000);
 }
