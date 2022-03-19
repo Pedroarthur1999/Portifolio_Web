@@ -462,6 +462,8 @@ header {
 .conhecimento-texto {
   justify-content: center;
   color: white;
+  font-family:'Times New Roman', Times, serif;
+  z-index: 10000;
 }
 .conhecimento-header {
   font-size: 1.7rem;
@@ -473,7 +475,17 @@ header {
   align-items: center;
   row-gap: 2rem;
 }
+.image-conhecimentos{
+  width: 100%;
+  grid-column: 9/13 ;
+  grid-row: 3/5;
+  opacity: .9;
 
+}
+.image-conhecimentos img{
+  width: 100%;
+
+}
 section#projetos {
   width: 100vw;
   height: 100vh;
@@ -484,11 +496,11 @@ section#projetos {
   overflow: hidden;
   background-image: url(_images/web-design-g5899fc849_1920.jpg);
   background-size: cover;
+
 }
 .bg_projects{
   width: 100vw;
-  height: 100vh; 
-  
+  height: 100vh;   
 }
 .bg_projects img{
   width: 100%;
@@ -511,26 +523,40 @@ section#projetos {
   justify-content: space-around;
   width: 18rem;
   height: 25rem;
-  background-color: rgb(233, 233, 233);
+  background-color: #212025;
   transform: scale(0.9);
   border-radius: 5px;
   transition: all .5s;
   cursor: pointer;
+  opacity: 1;
+  box-shadow:10px 10px 10px #212025 ;
 }
 .image_projects:hover{
   transition: all .5s;
   transform: scale(1);
-
+  opacity: 1;
 }
 .image_projects img{
-
   width: 100%;
   height: 100%;
   object-fit: cover;
-   
-
-
-
+}
+.card{
+  position: relative;
+}
+.card_title{
+  position: absolute;
+  color: white;
+  bottom: 2rem;
+  padding: 2rem;
+}
+.card-info{
+  color:white;
+  bottom: 0;
+  opacity: 0;
+}
+.card-info:hover{
+  opacity: 1;
 }
 .contato {
   width: 100vw;

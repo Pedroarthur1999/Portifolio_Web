@@ -6,19 +6,14 @@ hamburguer.addEventListener("click", function () {
     .classList.toggle("show-menu");
 });
 let conteudos = document.querySelector(".menu-item-2");
+const button_event = document.querySelector(".button");
 
-/*conteudos.addEventListener("click", function () {
-  let visivel = document.querySelector(".container").classList.add("visivel");
+button_event.addEventListener("click", function () {
+  console.log("clicou");
 });
-*/
-/*var conteudo = document.querySelector(".botao");
+const menuLinks = document.querySelectorAll('a[href^="#"]');
 
-conteudo.addEventListener("click", function () {
-  var visivel2 = document.querySelector(".container").classList.add("visivel");
-});
-*/
-const menuLinks = document.querySelectorAll('.menu a[href^="#"]');
-
+ console.log(menuLinks);
 function getDistanceFromTheTop(element) {
   const id = element.getAttribute("href");
   return document.querySelector(id).offsetTop;
