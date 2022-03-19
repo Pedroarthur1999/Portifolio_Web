@@ -85,6 +85,15 @@ function visivel() {
   }
 }
 
+function visivel2() {
+  if (
+    document.body.scrollTop > 750 ||
+    document.documentElement.scrollTop > 750
+  ) {
+    document.getElementsById("teste2").className = "image_groups2";
+  }
+}
+
 // efeito carregamento
 
 function spin() {

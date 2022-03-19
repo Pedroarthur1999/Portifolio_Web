@@ -418,7 +418,7 @@ header {
 .sessao-conhecimentos {
   width: 100%;
   display: block;
-  height: 110vh;
+  height: 100vh;
   background-color: rgba(41, 41, 43, 0.986);
   
 }
@@ -488,6 +488,7 @@ section#projetos {
 .bg_projects{
   width: 100vw;
   height: 100vh; 
+  
 }
 .bg_projects img{
   width: 100%;
@@ -514,6 +515,7 @@ section#projetos {
   transform: scale(0.9);
   border-radius: 5px;
   transition: all .5s;
+  cursor: pointer;
 }
 .image_projects:hover{
   transition: all .5s;
@@ -532,9 +534,10 @@ section#projetos {
 }
 .contato {
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   background-color: rgba(66, 66, 66, 0.158);
   color: white;
+  background-image: url(_images/system-g2a3f25437_1920.jpg);
 }
 iframe {
   width: 20%;
@@ -543,18 +546,35 @@ iframe {
   right: 1%;
 }
 footer {
-  position: relative;
-  bottom: 0;
   width: 100vw;
-  height: 10vh;
-  background-color: #0b0070;
+  height: 15vh;
+  background-color: #212025;
   color: white;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-footer{
+  width: 100vw;
+  height: inherit;
+  display: inline-block;
+  align-items: center;
+  justify-content:center;
+  font-size: 20px;
+}
+.copyright{
+  position: relative;
+  float: right;
+  right: 50px;
+  top: 30px;
 }
 
 .icones {
-  margin-left: 15px;
+  position: relative;
   float: left;
+  left: 30px;
+  top: 25px;
 }
 .icones i {
   padding: 4px;
