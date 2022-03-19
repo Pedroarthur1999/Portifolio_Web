@@ -486,6 +486,9 @@ header {
   align-items: center;
   row-gap: 2rem;
 }
+.conhecimento-header h3{
+  margin-left: 5px;
+}
 .image-conhecimentos{
   position: relative;
   bottom: 50px;
@@ -577,13 +580,37 @@ section#projetos {
   height: 100vh;
   background-color: rgba(66, 66, 66, 0.158);
   color: white;
-  background-image: url(_images/system-g2a3f25437_1920.jpg);
+  background-image: url(_images/light-bulb-gbede85548_1920.jpg);
+  
+}
+.contato img{
+  object-fit: cover;
+}
+.card-adress{
+  width: 20rem;
+  height: 12rem;
+  display: block;
+  position: relative;
+  float: right;
+  top:100px;
+  right: 100px;
+  background-color: #212025f3;
+  padding: 15px;
+  border-radius: 10px;
+}
+.address, .email, .phone{
+  padding: 10px;
+}
+.contato{
+  position: relative;
 }
 iframe {
-  width: 20%;
-  height: 10%;
+  width: 15rem;
+  height: 15rem;
   position: absolute;
-  right: 1%;
+  top: 200px;
+  left: 100px ;
+  border-radius: 10px;
 }
 footer {
   width: 100vw;
