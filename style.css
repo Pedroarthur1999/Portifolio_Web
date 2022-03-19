@@ -47,7 +47,7 @@
 }
 @media (max-width: 599px) {
   .show-menu .sidebar {
-    background-color: rgb(62, 0, 231);
+    background-color: rgb(2, 0, 104)
     width: 100vw;
     }
     .conhecimento{
@@ -100,7 +100,7 @@
     right: 0;
   }
   .show-menu .sidebar {
-    background-color: rgb(62, 0, 231);
+    background-color: rgba(2, 0, 139, 0.664)
   }
   
   .conhecimentos {
@@ -253,6 +253,17 @@ header {
   object-fit: cover;
   opacity: 0.8;
 }
+.image_photo{
+  position: absolute;
+  width: 9rem;
+  height: 9rem;
+  top:20px;
+  
+}
+.image_photo img{
+  width: 100%;
+  border-radius: 50%;
+}
 
 .banner {
   position: absolute;
@@ -358,7 +369,7 @@ header {
   width: 20rem;
   height: 100vh;
   position: fixed;
-  background-color: rgba(62, 0, 231, 0.596);
+  background-color: rgba(32, 0, 121, 0.753);
   z-index: 1000;
   overflow: hidden;
   top: 0%;
@@ -373,7 +384,7 @@ header {
 }
 .sidebar:hover {
   transition-duration: 1s;
-  background-color: rgb(62, 0, 231);
+  background-color: rgb(2 0 139)
 }
 .menu a {
   top: 30%;
@@ -476,6 +487,9 @@ header {
   row-gap: 2rem;
 }
 .image-conhecimentos{
+  position: relative;
+  bottom: 50px;
+  left: 5px;
   width: 100%;
   grid-column: 9/13 ;
   grid-row: 3/5;
