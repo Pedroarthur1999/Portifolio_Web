@@ -45,20 +45,21 @@
     transform: rotate(2turn);
   }
 }
-@media (max-width: 599px) {
+@media (max-width: 700px) {
   .show-menu .sidebar {
-    background-color: rgb(2, 0, 104)
-    width: 100vw;
+    background-color: rgb(2, 0, 104);
+    width: 102vw;
+    opacity: 1;
+    }
+    .sessao-conhecimentos{
+      width: 100vw;
     }
     .conhecimento{
       margin: 15px 50px;
     }
     .conhecimentos {
       position: relative;
-      top: 20px;
-       
-      /* grid-template-columns: repeat(16, 1fr);
-      grid-template-rows: repeat(8, 48px);  */
+      padding: 10px;
       margin-top: 15px;
       opacity: 0;
       animation: moveY 1s;
@@ -88,8 +89,18 @@
       grid-column: 12 / 1;
       grid-row: 6 / 8;
     }
+    .sessao-conhecimentos{
+      position: relative;
+      width: 100%;
+    }
+    
   }
-
+@media (max-width: 701px){
+  .image-conhecimentos img{
+    width: 0;
+    height: 0;
+  }
+}
 @media (min-width: 600px) {
   body {
     overflow-x: hidden;
@@ -102,18 +113,22 @@
   .show-menu .sidebar {
     background-color: rgba(2, 0, 139, 0.664)
   }
-  
   .conhecimentos {
-    position: relative;
-    top: 20px;
+    position: absolute;
     display: grid;
+    width: 100%;
+    height: 100%;
     grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(8, 48px); 
+    grid-template-rows: repeat(8, 48px);
     margin-top: 15px;
     opacity: 0;
     animation: moveY 1s;
     opacity: 1;
   }
+  .conhecimento {
+    width: 15rem;
+    height: 12rem;
+}
   .conhecimento:nth-child(1) {
     grid-column: 2 / 5;
     grid-row: 2 / 4;
@@ -142,6 +157,11 @@
   .conhecimento:nth-child(6) {
     grid-column: 13 / 15;
     grid-row: 7 / 8;
+  }
+  .sessao-conhecimentos{
+    position: relative;
+    width: 100%;
+    height: 100vh;
   }
   
   .menu {
@@ -188,8 +208,8 @@ body {
   position: fixed;
   border-radius: 10%;
   z-index: 10000;
-  top: 5rem;
-  right: 2%;
+  top: 32px;
+  right: 25px;
   margin: 5px 5px 5px 5px;
   cursor: pointer;
   transition: all 1s;
@@ -198,7 +218,7 @@ a {
   text-decoration: none;
 }
 .show-menu .hamburguer {
-  right: 10px;
+  right: 25px;
   background-color: rgba(94, 94, 94, 0);
 }
 .show-menu #line1 {
@@ -427,9 +447,8 @@ header {
 /* Section conhecimentos*/
 
 .sessao-conhecimentos {
-  width: 100%;
+  position: relative;
   display: block;
-  height: 100vh;
   background-color: rgba(41, 41, 43, 0.986);
   
 }
@@ -462,13 +481,14 @@ header {
   margin-bottom: 20px;
 }
 
-.conhecimentos2 {
-  position: relative;
-  color: white;
-  top: 20px;
-  margin-top: 1em;
-  opacity: 0;
-}
+
+  .conhecimentos2 {
+    
+    position: absolute;
+    color: white;
+    margin-top: 1em;
+    opacity: 0;
+  }
 
 .conhecimento-texto {
   justify-content: center;
@@ -505,7 +525,7 @@ header {
 }
 section#projetos {
   width: 100vw;
-  height: 100vh;
+  height: 105vh;
   background-color: rgb(17, 14, 14);
   align-items: center;
   justify-content: center;
@@ -515,72 +535,34 @@ section#projetos {
   background-size: cover;
 
 }
-.bg_projects{
-  width: 100vw;
-  height: 100vh;   
+.projects{
+  display: flex;
+  justify-content: space-around; 
+  margin: 3rem;
 }
-.bg_projects img{
+.card{
+  width: 23rem;
+  height: 30rem;
+  background-color: #212025;
+  border-radius: 10px;
+}
+.card-image-wrapper{
   width: 100%;
-  height: 100%; 
-  object-fit: cover;
-}
-.image_groups{
-  overflow: hidden;
-  width: 2000px;
-  padding: 20px;
-  position: relative;
-  top: 35px;
-  display: inline-flex;
+  height: 100%;
   
 }
-
-
-.image_projects{
-  display: inline-flex;
-  justify-content: space-around;
-  width: 18rem;
-  height: 25rem;
-  background-color: #212025;
-  transform: scale(0.9);
-  border-radius: 5px;
-  transition: all .5s;
-  cursor: pointer;
-  opacity: 1;
-  box-shadow:10px 10px 10px #212025 ;
-}
-.image_projects:hover{
-  transition: all .5s;
-  transform: scale(1);
-  opacity: 1;
-}
-.image_projects img{
+.card-image-wrapper img{
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-.card{
-  position: relative;
-}
-.card_title{
-  position: absolute;
-  color: white;
-  bottom: 2rem;
-  padding: 2rem;
-}
-.card-info{
-  color:white;
-  bottom: 0;
-  opacity: 0;
-}
-.card-info:hover{
-  opacity: 1;
+  border-radius: 10px;
 }
 .contato {
   width: 100vw;
   height: 100vh;
   background-color: rgba(66, 66, 66, 0.158);
   color: white;
-  background-image: url(_images/light-bulb-gbede85548_1920.jpg);
+  background-image: url(_images/bg-section-conhecimentos\ \(2\).jpg);
   
 }
 .contato img{
