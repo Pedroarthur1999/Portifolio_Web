@@ -118,8 +118,11 @@
     opacity: 1;
   }
   .conhecimento {
-    width: 15rem;
-    height: 12rem;
+    height: 13rem;
+}
+.conhecimento-texto{
+  width: 15rem;
+  height: 12rem;
 }
   .conhecimento:nth-child(1) {
     grid-column: 2 / 5;
