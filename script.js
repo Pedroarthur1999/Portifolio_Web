@@ -115,14 +115,14 @@ let row_right = 0;
 button_right.addEventListener("click", function () {
   if (row_right > 288 * 2 * -1) {
     row_right -= 288;
-    projects_row.style.marginLeft = row_right + "px";
-    projects_row.style.transition = "ease";
+    projects_row.style.transform =`translateX(${row_right}px)`;                     //row_right + "px";
   }
 });
+
 button_left.addEventListener("click", function () {
   if (row_right < 0) {
     row_right += 288;
-    projects_row.style.marginLeft = row_right + "px";
+    projects_row.style.transform =`translateX(${row_right}px)`;
     console.log(row_right);
   }
 });

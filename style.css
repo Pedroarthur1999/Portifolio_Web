@@ -261,7 +261,7 @@ header {
   height: 100%;
   overflow: hidden;
   background-color: rgba(41, 41, 43, 0.986);
-  animation: zoom 25s;
+  animation: zoom 15s infinite  alternate ; 
 }
 .image-wrapper img {
   width: 100%;

@@ -22,9 +22,10 @@ section#projetos {
 
 .projects {
   display: flex;
-  margin: 2rem 0px 2rem 0px;
+  margin: 2rem 0px;
+  margin-left: 0;
   width: 2000px;
-  transition: all ease 1s;
+  transition: all 1s;
   background-color: #21202577;
   
 }
