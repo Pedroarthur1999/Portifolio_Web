@@ -1,0 +1,38 @@
+.contato {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(66, 66, 66, 0.158);
+  color: white;
+  background-image: url(_images/bg-section-conhecimentos\\(2\).jpg);
+}
+.contato img {
+  object-fit: cover;
+}
+.card-adress {
+  width: 20rem;
+  height: 12rem;
+  display: block;
+  position: relative;
+  float: right;
+  top: 100px;
+  right: 100px;
+  background-color: #212025f3;
+  padding: 15px;
+  border-radius: 10px;
+}
+.address,
+.email,
+.phone {
+  padding: 10px;
+}
+.contato {
+  position: relative;
+}
+iframe {
+  width: 15rem;
+  height: 15rem;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  border-radius: 10px;
+}

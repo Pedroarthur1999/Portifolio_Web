@@ -1,0 +1,72 @@
+.sessao-conhecimentos {
+  position: relative;
+  display: block;
+  background-color: rgba(41, 41, 43, 0.986);
+}
+.foto-conhecimento {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+.foto-conhecimento img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+.secao-header h2 {
+  font-size: 30pt;
+  font-family: "Baloo 2";
+  color: rgb(0, 217, 255);
+  text-align: center;
+  z-index: 100;
+  font-weight: 900;
+}
+.traco {
+  width: 300px;
+  height: 3px;
+  background-color: #6000c0;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.conhecimentos2 {
+  position: absolute;
+  color: white;
+  margin-top: 1em;
+  opacity: 0;
+}
+
+.conhecimento-texto {
+  justify-content: center;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  z-index: 10000;
+}
+.conhecimento-header {
+  font-size: 1.7rem;
+  text-align: center;
+  margin-bottom: 5px;
+  border-bottom: solid 2px #6000c0;
+  color: #cccaca;
+  display: flex;
+  align-items: center;
+  row-gap: 2rem;
+}
+.conhecimento-header h3 {
+  margin-left: 5px;
+}
+.image-conhecimentos {
+  position: relative;
+  bottom: 50px;
+  left: 5px;
+  width: 100%;
+  grid-column: 9/13;
+  grid-row: 3/5;
+  opacity: 0.9;
+}
+.image-conhecimentos img {
+  width: 100%;
+}

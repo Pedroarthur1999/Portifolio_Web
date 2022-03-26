@@ -6,14 +6,9 @@ hamburguer.addEventListener("click", function () {
     .classList.toggle("show-menu");
 });
 let conteudos = document.querySelector(".menu-item-2");
-const button_event = document.querySelector(".button");
 
-button_event.addEventListener("click", function () {
-  console.log("clicou");
-});
 const menuLinks = document.querySelectorAll('a[href^="#"]');
 
- console.log(menuLinks);
 function getDistanceFromTheTop(element) {
   const id = element.getAttribute("href");
   return document.querySelector(id).offsetTop;
@@ -112,3 +107,24 @@ function spin() {
     document.querySelector(".cover").classList.toggle("-true");
   }, 1000);
 }
+const button_left = document.querySelector(".arrow-left");
+const button_right = document.querySelector(".arrow-right")
+const projects_row = document.querySelector(".projects")
+let row_right = 0;
+
+
+
+button_right.addEventListener("click", function () {
+  if(row_right> (288*4)*-1){
+  row_right -= 288
+  projects_row.style.marginLeft = row_right+'px';
+  projects_row.style.transition = 'ease'
+  }
+});
+button_left.addEventListener("click", function () {
+  if(row_right<0){
+  row_right +=288  
+  projects_row.style.marginLeft = row_right+'px';
+      console.log(row_right);
+  }
+});

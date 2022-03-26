@@ -49,7 +49,7 @@
   .show-menu .sidebar {
     background-color: rgb(2, 0, 104);
     width: 102vw;
-    opacity: 1;
+    opacity: .9;
     }
     .sessao-conhecimentos{
       width: 100vw;
@@ -215,6 +215,7 @@ a {
 .show-menu .hamburguer {
   right: 25px;
   background-color: rgba(94, 94, 94, 0);
+  transition: all 1s;
 }
 .show-menu #line1 {
   transform: rotate(45deg) translate(0.65rem, -0.05rem);
@@ -320,8 +321,6 @@ header {
   bottom: 30px;
   right: 30px;
   cursor: pointer;
-}
-.arrow-up {
   align-items: center;
   justify-content: center;
   display: flex;
@@ -330,6 +329,7 @@ header {
   background: linear-gradient(to right, #6000c0, #5f179b);
   opacity: 0.8;
   transition: 0.5s;
+  z-index: 200;
 }
 .arrow-up:hover {
   transition: 0.3s;
@@ -439,119 +439,6 @@ header {
   color: rgb(126, 125, 126);
 }
 
-/* Section conhecimentos*/
-
-.sessao-conhecimentos {
-  position: relative;
-  display: block;
-  background-color: rgba(41, 41, 43, 0.986);
-  
-}
-.foto-conhecimento {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-}
-.foto-conhecimento img {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  opacity: 0.7;
-  z-index: 0;
-}
-
-.secao-header h2 {
-  font-size: 30pt;
-  font-family: "Baloo 2";
-  color: rgb(0, 217, 255);
-  text-align: center;
-  z-index: 100;
-  font-weight: 900;
-}
-.traco {
-  width: 300px;
-  height: 3px;
-  background-color: #6000c0;
-  margin: auto;
-  margin-bottom: 20px;
-}
-
-
-  .conhecimentos2 {
-    
-    position: absolute;
-    color: white;
-    margin-top: 1em;
-    opacity: 0;
-  }
-
-.conhecimento-texto {
-  justify-content: center;
-  color: white;
-  font-family:'Times New Roman', Times, serif;
-  z-index: 10000;
-}
-.conhecimento-header {
-  font-size: 1.7rem;
-  text-align: center;
-  margin-bottom: 5px;
-  border-bottom: solid 2px #6000c0;
-  color: #cccaca;
-  display: flex;
-  align-items: center;
-  row-gap: 2rem;
-}
-.conhecimento-header h3{
-  margin-left: 5px;
-}
-.image-conhecimentos{
-  position: relative;
-  bottom: 50px;
-  left: 5px;
-  width: 100%;
-  grid-column: 9/13 ;
-  grid-row: 3/5;
-  opacity: .9;
-
-}
-.image-conhecimentos img{
-  width: 100%;
-
-}
-section#projetos {
-  width: 100vw;
-  height: 105vh;
-  background-color: rgb(17, 14, 14);
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  overflow: hidden;
-  background-image: url(_images/web-design-g5899fc849_1920.jpg);
-  background-size: cover;
-
-}
-.projects{
-  display: flex;
-  justify-content: space-around; 
-  margin: 3rem;
-}
-.card{
-  width: 23rem;
-  height: 30rem;
-  background-color: #212025;
-  border-radius: 10px;
-}
-.card-image-wrapper{
-  width: 100%;
-  height: 100%;
-  
-}
-.card-image-wrapper img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-}
 .contato {
   width: 100vw;
   height: 100vh;
@@ -589,6 +476,8 @@ iframe {
   left: 100px ;
   border-radius: 10px;
 }
+
+ /* Rodapé */
 footer {
   width: 100vw;
   height: 15vh;
