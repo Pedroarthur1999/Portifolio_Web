@@ -439,14 +439,6 @@ header {
   color: rgb(126, 125, 126);
 }
 
-.contato {
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(66, 66, 66, 0.158);
-  color: white;
-  background-image: url(_images/bg-section-conhecimentos\ \(2\).jpg);
-  
-}
 .contato img{
   object-fit: cover;
 }
