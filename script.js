@@ -66,12 +66,12 @@ function myFunction() {
   }
 }
 
-function visivel(id) {
+function visivel() {
   if (
     document.body.scrollTop > 350 ||
     document.documentElement.scrollTop > 350
   ) {
-    document.getElementById('teste').className = "conhecimentos";
+    document.getElementById("teste").className = "conhecimentos";
   }
 }
 
@@ -110,6 +110,7 @@ function spin() {
 const button_left = document.querySelector(".arrow-left");
 const button_right = document.querySelector(".arrow-right");
 const projects_row = document.querySelector(".projects");
+
 let row_right = 0;
 
 button_right.addEventListener("click", function () {

@@ -63,7 +63,7 @@ section#projetos {
   width: 100%;
   height: 100%;
   transition: all 0.3s;
-  background: rgba(85, 85, 85, 0.5);
+  background: rgba(85, 85, 85, 0.301);
 
 }
 .card-info:hover {
