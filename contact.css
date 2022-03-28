@@ -9,6 +9,9 @@
   background-color: rgba(66, 66, 66, 0.158);
   color: white;
   background-image: url(_images/bg-section-conhecimentos\\(2\).jpg);
+  position: relative;
+  
+
 }
 .contato img {
   object-fit: cover;
@@ -30,26 +33,32 @@
 .phone {
   padding: 10px;
 }
-.contato {
-  position: relative;
-}
 .contato-wrapper {
   width: 60%;
   height: 30rem;
   display: flex;
   box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  margin: 2.5rem auto ;
+  
 }
 
 .contato-left {
-  width: 35%;
+  width: 45%;
   background: linear-gradient(rgba(15, 15, 15, 0.2), rgba(22, 22, 22, 0.8)),
     url(_images/contato.jpg);
   background-size: cover;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .contato-right {
   width: 65%;
   padding: 1rem 3rem 3rem 3rem;
+  background:#01003d;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  align-items: center;
 }
 
 .sessao-contato h1 {
@@ -81,6 +90,7 @@
   height: 3rem;
   outline: none;
   margin: 1rem 0;
+  color: white;
 }
 
 .input-group textarea {
@@ -92,7 +102,6 @@
 .field-label {
   position: absolute;
   left: 0;
-  top: 2rem;
   font-size: 1rem;
   font-family: var(--font-secundary);
   text-transform: uppercase;
@@ -122,12 +131,4 @@
 
 .preenchido{
     pointer-events: none;
-}
-iframe {
-  width: 15rem;
-  height: 15rem;
-  position: absolute;
-  top: 200px;
-  left: 100px;
-  border-radius: 10px;
 }
