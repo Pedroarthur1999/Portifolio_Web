@@ -66,12 +66,12 @@ function myFunction() {
   }
 }
 
-function visivel() {
+function visivel(id) {
   if (
     document.body.scrollTop > 350 ||
     document.documentElement.scrollTop > 350
   ) {
-    document.getElementById("teste").className = "conhecimentos";
+    document.getElementById('teste').className = "conhecimentos";
   }
 }
 
