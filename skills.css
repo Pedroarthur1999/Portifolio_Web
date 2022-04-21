@@ -1,6 +1,6 @@
 @keyframes moveY_image {
     0% {
-        transform: translateY(30px);
+        transform: translateY(10px);
     }
     100% {
         transform: translateY(0);
@@ -63,7 +63,7 @@
     font-size: 1.7rem;
     text-align: center;
     margin-bottom: 5px;
-    border-bottom: solid 2px #6000c0;
+    border-bottom: solid 2px #8000ffb0;
     color: #cccaca;
     display: flex;
     align-items: center;
@@ -86,4 +86,21 @@
 
 .image-conhecimentos img {
     width: 100%;
+    animation: moveY_image 1.5s infinite alternate;
+}
+
+.down_curriculum {
+    margin: 20px 0px;
+    display: flex;
+}
+
+.down_curriculum a {
+    color: white;
+    text-decoration: none;
+    transition-duration: .1s;
+}
+
+.down_curriculum a:hover {
+    color: rgb(44, 44, 44);
+    transition-duration: .1s;
 }
