@@ -88,19 +88,3 @@
     width: 100%;
     animation: moveY_image 1.5s infinite alternate;
 }
-
-.down_curriculum {
-    margin: 20px 0px;
-    display: flex;
-}
-
-.down_curriculum a {
-    color: white;
-    text-decoration: none;
-    transition-duration: .1s;
-}
-
-.down_curriculum a:hover {
-    color: rgb(44, 44, 44);
-    transition-duration: .1s;
-}
