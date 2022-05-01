@@ -84,11 +84,11 @@
 .field {
     background: transparent;
     border: none;
-    width: 20rem;
+    width: 13rem;
     font-size: 1.5rem;
     font-family: var(--font-secundary);
     border-bottom: 2px dashed #636363;
-    height: 3rem;
+    height: 4rem;
     outline: none;
     margin: 1rem 0;
     color: white;
