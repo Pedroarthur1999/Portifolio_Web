@@ -1,155 +1,161 @@
-:root {
-    --font-primary: "Baloo Da 2", serif;
-    --font-secundary: "Josefin Slab", serif;
-    --font-action: "Muli", serif;
-}
-
-.contato {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.931);
-    color: white;
-    position: relative;
-}
-
-.contato img {
-    object-fit: cover;
-}
-
-.card-adress {
-    width: 20rem;
-    height: 12rem;
-    display: block;
-    position: relative;
-    float: right;
-    top: 100px;
-    right: 100px;
-    background-color: #212025f3;
-    padding: 15px;
-    border-radius: 10px;
-}
-
-.address,
-.email,
-.phone {
-    padding: 10px;
-}
-
-.contato-wrapper {
-    width: 60%;
-    height: 30rem;
-    display: flex;
-    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    margin: 2.5rem auto;
-}
-
-.contato-left {
-    width: 45%;
-    background: linear-gradient(rgba(15, 15, 15, 0.2), rgba(22, 22, 22, 0.8)), url(_images/contato.jpg);
-    background-size: cover;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-}
-
-.contato-right {
-    width: 65%;
-    padding: 1rem 3rem 3rem 3rem;
-    background: #01003d;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    align-items: center;
-}
-
-.sessao-contato h1 {
-    width: 100%;
-    text-align: center;
-    font-family: var(--font-primary);
-    color: #272727;
-    font-size: 3rem;
-    font-weight: lighter;
-}
-
-.sessao-contato form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.input-group {
-    position: relative;
-}
-
-.field {
-    background: transparent;
-    border: none;
-    width: 13rem;
-    font-size: 1.5rem;
-    font-family: var(--font-secundary);
-    border-bottom: 2px dashed #636363;
-    height: 4rem;
-    outline: none;
-    margin: 1rem 0;
-    color: white;
-}
-
-.input-group textarea {
-    padding-top: 1rem;
-    max-width: 25rem;
-    max-height: 3rem;
-}
-
-.field-label {
-    position: absolute;
-    left: 0;
-    font-size: 1rem;
-    font-family: var(--font-secundary);
-    text-transform: uppercase;
-    transition: all 0.3s;
-}
-
-.field:focus~label {
-    top: 0;
-    font-size: 0.7rem;
-}
-
-.field:focus {
-    border-bottom: 1px solid;
-}
-
-.btn-submit {
-    color: white;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    width: 80%;
-    height: 2.5rem;
-    background-color: #7a00f360;
-    margin-top: 1rem;
-    border: none;
-    border-radius: 10px;
-    letter-spacing: 0.1rem;
-    padding: 10px;
-    cursor: pointer;
-    text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
-}
-
-.preenchido {
-    pointer-events: none;
-}
-
-.down_curriculum {
-    margin: 20px 0px;
-    display: flex;
-}
-
-.down_curriculum a {
-    color: white;
-    text-decoration: none;
-    transition-duration: 0.1s;
-}
-
-.down_curriculum a:hover {
-    color: rgb(44, 44, 44);
-    transition-duration: 0.1s;
-}
+                   :root {
+                      --font-primary: "Baloo Da 2", serif;
+                      --font-secundary: "Josefin Slab", serif;
+                      --font-action: "Muli", serif;
+                  }
+                  
+                  @media (max-width: 500px) {
+                      .contato-left {
+                          display:none;
+                      }
+                  }
+                  
+                  .contato {
+                      width: 100vw;
+                      height: 100vh;
+                      background-color: rgba(0, 0, 0, 0.931);
+                      color: white;
+                      position: relative;
+                  }
+                  
+                  .contato img {
+                      object-fit: cover;
+                  }
+                  
+                  .card-adress {
+                      width: 20rem;
+                      height: 12rem;
+                      display: block;
+                      position: relative;
+                      float: right;
+                      top: 100px;
+                      right: 100px;
+                      background-color: #212025f3;
+                      padding: 15px;
+                      border-radius: 10px;
+                  }
+                  
+                  .address,
+                  .email,
+                  .phone {
+                      padding: 10px;
+                  }
+                  
+                  .contato-wrapper {
+                      width: 60%;
+                      height: 30rem;
+                      display: flex;
+                      box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
+                      justify-content: center;
+                      margin: 2.5rem auto;
+                  }
+                  
+                  .contato-left {
+                      width: 45%;
+                      background: linear-gradient(rgba(15, 15, 15, 0.2), rgba(22, 22, 22, 0.8)), url(_images/contato.jpg);
+                      background-size: cover;
+                      border-top-left-radius: 15px;
+                      border-bottom-left-radius: 15px;
+                  }
+                  
+                  .contato-right {
+                      width: 65%;
+                      padding: 1rem 3rem 3rem 3rem;
+                      background: #01003d;
+                      border-top-right-radius: 15px;
+                      border-bottom-right-radius: 15px;
+                      align-items: center;
+                  }
+                  
+                  .sessao-contato h1 {
+                      width: 100%;
+                      text-align: center;
+                      font-family: var(--font-primary);
+                      color: #272727;
+                      font-size: 3rem;
+                      font-weight: lighter;
+                  }
+                  
+                  .sessao-contato form {
+                      width: 100%;
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                  }
+                  
+                  .input-group {
+                      position: relative;
+                  }
+                  
+                  .field {
+                      background: transparent;
+                      border: none;
+                      width: 13rem;
+                      font-size: 1.5rem;
+                      font-family: var(--font-secundary);
+                      border-bottom: 2px dashed #636363;
+                      height: 4rem;
+                      outline: none;
+                      margin: 1rem 0;
+                      color: white;
+                  }
+                  
+                  .input-group textarea {
+                      padding-top: 1rem;
+                      max-width: 25rem;
+                      max-height: 3rem;
+                  }
+                  
+                  .field-label {
+                      position: absolute;
+                      left: 0;
+                      font-size: 1rem;
+                      font-family: var(--font-secundary);
+                      text-transform: uppercase;
+                      transition: all 0.3s;
+                  }
+                  
+                  .field:focus~label {
+                      top: 0;
+                      font-size: 0.7rem;
+                  }
+                  
+                  .field:focus {
+                      border-bottom: 1px solid;
+                  }
+                  
+                  .btn-submit {
+                      color: white;
+                      font-size: 1.2rem;
+                      text-transform: uppercase;
+                      width: 80%;
+                      height: 2.5rem;
+                      background-color: #7a00f360;
+                      margin-top: 1rem;
+                      border: none;
+                      border-radius: 10px;
+                      letter-spacing: 0.1rem;
+                      padding: 10px;
+                      cursor: pointer;
+                      text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+                  }
+                  
+                  .preenchido {
+                      pointer-events: none;
+                  }
+                  
+                  .down_curriculum {
+                      margin: 20px 0px;
+                      display: flex;
+                  }
+                  
+                  .down_curriculum a {
+                      color: white;
+                      text-decoration: none;
+                      transition-duration: 0.1s;
+                  }
+                  
+                  .down_curriculum a:hover {
+                      color: rgb(44, 44, 44);
+                      transition-duration: 0.1s;
+                  }
