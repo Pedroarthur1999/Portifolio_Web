@@ -127,3 +127,10 @@ button_left.addEventListener("click", function() {
         console.log(row_right);
     }
 });
+
+window.sr = ScrollReveal({reset: true});
+
+sr.reveal('.father-box', {duration: 2000})
+sr.reveal('conhecimento', {duration: 2000})
+sr.reveal('secao-header', {duration:2000})
+

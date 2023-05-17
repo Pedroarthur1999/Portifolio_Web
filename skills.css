@@ -29,7 +29,7 @@
 }
 
 .secao-header h2 {
-    font-size: 30pt;
+    font-size: 3.7rem;
     font-family: "Baloo 2";
     color: rgb(0, 217, 255);
     text-align: center;
@@ -60,7 +60,7 @@
 }
 
 .conhecimento-header {
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     text-align: center;
     margin-bottom: 5px;
     border-bottom: solid 2px #8000ffb0;
@@ -76,15 +76,26 @@
 
 .image-conhecimentos {
     position: relative;
-    bottom: 50px;
-    left: 5px;
+    top: 100px;
+    left: 4rem;
+    width: 30rem;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    grid-column: 55/80;
+    justify-content: flex-start;
+    align-items: center;
+    grid-row: 2/5;
+    overflow: hidden;
+}
+.child-image{
+    position: absolute;
     width: 100%;
-    grid-column: 9/13;
-    grid-row: 3/5;
-    opacity: 0.9;
+    height: 100%;
 }
 
 .image-conhecimentos img {
-    width: 100%;
+    width: 30rem;
+    height: 25rem;
     animation: moveY_image 1.5s infinite alternate;
 }

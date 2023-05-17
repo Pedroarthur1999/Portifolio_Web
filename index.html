@@ -13,6 +13,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="_favicon/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="_favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="_favicon/favicon-16x16.png" />
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <title>DevWeb</title>
 </head>
@@ -66,20 +67,20 @@
             </div>
         </aside>
 
-        <section class="sessao-conhecimentos" id="secao-conhecimento">
+        <section class="sessao-conhecimentos"  onscroll="visivel()"  id="secao-conhecimento">
 
 
             <div class="foto-conhecimento">
                 <!--<figure><img src="_images/bg-section-conhecimentos (2).jpg" alt="dev"/></figure>-->
             </div>
-            <div class="secao-header" id="secao-conhecimento">
+            <div class="secao-header"id="secao-conhecimento">
 
                 <div class="title_header">
                     <h2>Conhecimentos</h2>
                 </div>
                 <div class="traco"></div>
             </div>
-            <div onscroll="visivel()" class="conhecimentos2" id="teste">
+            <div  class="conhecimentos2" id="teste">
 
                 <div class="conhecimento">
                     <div class="conhecimento-header">
@@ -154,95 +155,101 @@
 
                 </div>
                 <div class="image-conhecimentos">
-                    <img src="_images/conhecimentos.png" alt="">
+                    
+                    <div class="child-image"><img src="_images/conhecimentos.png" alt=""></div>
                 </div>
             </div>
         </section>
         <section id="projetos">
+
             <div class="secao-header">
-                <h2>Projetos</h2>
-                <div class="traco"></div>
+                <div class="title-header">
+                    <h2>Projetos</h2>
+                    <div class="traco"></div>
+                </div>
             </div>
             <div class="bg_project">
             </div>
-
-            <div class="box-projects">
-                <div class="arrow-left"><i class="fas fa-angle-left"></i></div>
-                <div class="projects">
-                    <div class="card">
-                        <div class="card-image-wrapper">
-                            <img src="_images/glasses-g026f4e1fb_640.jpg" alt="">
+<div class="father-box">
+    
+    <div class="arrow-left"><i class="fas fa-angle-left"></i></div>
+                <div class="box-projects">
+                    <div class="projects">
+                        <div class="card">
+                            <div class="card-image-wrapper">
+                                <img src="_images/glasses-g026f4e1fb_640.jpg" alt="">
+                            </div>
+                            <div class="card-info">
+                                <h2>Google Glass</h2>
+                                <h3>HTML5, CSS3, Js</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aut nihil aliquid laboriosam fugit nemo sint voluptates optio deleniti voluptatibus molestias veritatis, vel libero cumque iusto at nulla facere cum?</p>
+                                <a href=" https://pedroarthur1999.github.io/Project_Google_Glass/" target="blank"><button class="button-projects">Saiba Mais</button></a>
+                            </div>
                         </div>
-                        <div class="card-info">
-                            <h2>Google Glass</h2>
-                            <h3>HTML5, CSS3, Js</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aut nihil aliquid laboriosam fugit nemo sint voluptates optio deleniti voluptatibus molestias veritatis, vel libero cumque iusto at nulla facere cum?</p>
-                            <a href=" https://pedroarthur1999.github.io/Project_Google_Glass/" target="blank"><button class="button-projects">Saiba Mais</button></a>
+                        <div class="card">
+                            <div class="card-image-wrapper">
+                                <img src="_images/project To-do.png" alt="">
+                            </div>
+                            <div class="card-info">
+                                <h2>To-do list</h2>
+                                <h3>JavaScript</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aut amet pariatur distinctio voluptatibus culpa et sit maiores nobis velit. Labore fuga ratione, excepturi recusandae corporis voluptas eveniet iusto assumenda.</p>
+                                <a href="https://to-do-list-tau-pied.vercel.app/" target="blank"><button class="button-projects">Saiba Mais</button></a>
+                            </div>
                         </div>
+                        <div class="card">
+                            <div class="card-image-wrapper">
+                                <img src="_images/php-gfe5a379a4_640.jpg" alt="">
+    
+                            </div>
+                            <div class="card-info">
+                                <h2>Banco de dados</h2>
+                                <h3>PHP, MySQL</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi incidunt, nostrum quo error sunt quia labore aliquid praesentium repellat! Veniam explicabo sunt fugit nihil placeat reiciendis tenetur similique voluptates odio.</p>
+                                <a href="http://pedromedeiros.epizy.com/
+                            " target="
+                            blank"><button class="button-projects">Saiba Mais</button></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image-wrapper">
+                                <img src="_images/time-g19f2b7a9e_640.png" alt="">
+                            </div>
+                            <div class="card-info">
+                                <h2>Cronômetro</h2>
+                                <h3>HTML5, CSS3, Js</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolorum, inventore, suscipit molestiae facere veniam quis quibusdam quae id nemo reprehenderit. Assumenda ex obcaecati tenetur voluptatem aut velit natus modi?</p>
+                                <button class="button-projects">Saiba Mais</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image-wrapper">
+                                <img src="_images/project To-do.png" alt="">
+                            </div>
+                            <div class="card-info">
+                                <h2>To-do list</h2>
+                                <h3>JavaScript</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aut amet pariatur distinctio voluptatibus culpa et sit maiores nobis velit. Labore fuga ratione, excepturi recusandae corporis voluptas eveniet iusto assumenda.</p>
+                                <a href="https://to-do-list-tau-pied.vercel.app/" target="blank"><button class="button-projects">Saiba Mais</button></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image-wrapper">
+                                <img src="_images/project To-do.png" alt="">
+                            </div>
+                            <div class="card-info">
+                                <h2>To-do list</h2>
+                                <h3>JavaScript</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aut amet pariatur distinctio voluptatibus culpa et sit maiores nobis velit. Labore fuga ratione, excepturi recusandae corporis voluptas eveniet iusto assumenda.</p>
+                                <a href="https://to-do-list-tau-pied.vercel.app/" target="blank"><button class="button-projects">Saiba Mais</button></a>
+                            </div>
+                        </div>
+    
+    
                     </div>
-                    <div class="card">
-                        <div class="card-image-wrapper">
-                            <img src="_images/project To-do.png" alt="">
-                        </div>
-                        <div class="card-info">
-                            <h2>To-do list</h2>
-                            <h3>JavaScript</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aut amet pariatur distinctio voluptatibus culpa et sit maiores nobis velit. Labore fuga ratione, excepturi recusandae corporis voluptas eveniet iusto assumenda.</p>
-                            <a href="https://to-do-list-tau-pied.vercel.app/" target="blank"><button class="button-projects">Saiba Mais</button></a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-image-wrapper">
-                            <img src="_images/php-gfe5a379a4_640.jpg" alt="">
-
-                        </div>
-                        <div class="card-info">
-                            <h2>Banco de dados</h2>
-                            <h3>PHP, MySQL</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi incidunt, nostrum quo error sunt quia labore aliquid praesentium repellat! Veniam explicabo sunt fugit nihil placeat reiciendis tenetur similique voluptates odio.</p>
-                            <a href="http://pedromedeiros.epizy.com/
-                        " target="
-                        blank"><button class="button-projects">Saiba Mais</button></a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-image-wrapper">
-                            <img src="_images/time-g19f2b7a9e_640.png" alt="">
-                        </div>
-                        <div class="card-info">
-                            <h2>Cronômetro</h2>
-                            <h3>HTML5, CSS3, Js</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolorum, inventore, suscipit molestiae facere veniam quis quibusdam quae id nemo reprehenderit. Assumenda ex obcaecati tenetur voluptatem aut velit natus modi?</p>
-                            <button class="button-projects">Saiba Mais</button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-image-wrapper">
-                            <img src="_images/project To-do.png" alt="">
-                        </div>
-                        <div class="card-info">
-                            <h2>To-do list</h2>
-                            <h3>JavaScript</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aut amet pariatur distinctio voluptatibus culpa et sit maiores nobis velit. Labore fuga ratione, excepturi recusandae corporis voluptas eveniet iusto assumenda.</p>
-                            <a href="https://to-do-list-tau-pied.vercel.app/" target="blank"><button class="button-projects">Saiba Mais</button></a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-image-wrapper">
-                            <img src="_images/project To-do.png" alt="">
-                        </div>
-                        <div class="card-info">
-                            <h2>To-do list</h2>
-                            <h3>JavaScript</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aut amet pariatur distinctio voluptatibus culpa et sit maiores nobis velit. Labore fuga ratione, excepturi recusandae corporis voluptas eveniet iusto assumenda.</p>
-                            <a href="https://to-do-list-tau-pied.vercel.app/" target="blank"><button class="button-projects">Saiba Mais</button></a>
-                        </div>
-                    </div>
-
-
                 </div>
                 <div class="arrow-right"><i class="fas fa-angle-right"></i></div>
-            </div>
+</div>
         </section>
         <section class="contato" id="contato2">
 

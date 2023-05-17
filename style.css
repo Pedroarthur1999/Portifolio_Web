@@ -48,20 +48,30 @@
         transform: rotate(2turn);
     }
 }
-
-@media (max-width: 500px) {
+html {
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
+body {
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+}
+@media (max-width: 75rem) {
     html {
-        font-size: 60%;
+        font-size: 58%;
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 95rem) {
     html {
-        font-size: 80%;
+        font-size: 60%;
     }
     .show-menu .sidebar {
         background-color: rgb(2, 0, 104);
-        width: 102vw;
+        width: 35rem;
         opacity: .9;
     }
     .sessao-conhecimentos {
@@ -97,7 +107,7 @@
         display: grid;
         width: 100%;
         height: 100%;
-        grid-template-columns: repeat(16, 1fr);
+        grid-template-columns: repeat(100, 1fr);
         grid-template-rows: repeat(8, 48px);
         margin-top: 15px;
         opacity: 0;
@@ -105,34 +115,35 @@
         opacity: 1;
     }
     .conhecimento {
-        height: 13rem;
+        width: 20rem;
+        height: 15rem;
     }
     .conhecimento-texto {
-        width: 15rem;
+        width: 20rem;
         height: 12rem;
     }
     .conhecimento:nth-child(1) {
-        grid-column: 2 / 5;
+        grid-column: 1 / 25;
         grid-row: 2 / 4;
     }
     .conhecimento:nth-child(2) {
-        grid-column: 8 / 10;
+        grid-column: 40 / 60;
         grid-row: 1 / 3;
     }
     .conhecimento:nth-child(3) {
-        grid-column: 13 / 16;
-        grid-row: 2 / 5;
+        grid-column: 75 / 99;
+        grid-row: 2 / 4;
     }
     .conhecimento:nth-child(4) {
-        grid-column: 2 / 5;
+        grid-column: 1 / 25;
         grid-row: 7 / 8;
     }
     .conhecimento:nth-child(5) {
-        grid-column: 8 / 10;
+        grid-column: 40 / 60;
         grid-row: 8 / 8;
     }
     .conhecimento:nth-child(6) {
-        grid-column: 13 / 15;
+        grid-column: 75 / 99;
         grid-row: 7 / 8;
     }
     .sessao-conhecimentos {
@@ -146,16 +157,8 @@
 }
 
 
-}
-html {
-    overflow-x: hidden;
-}
-body {
-    position: relative;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
+
+
 .cover.-true {
     position: fixed;
     width: 100vw;
@@ -184,8 +187,8 @@ body {
     position: fixed;
     border-radius: 10%;
     z-index: 10000;
-    top: 32px;
-    right: 25px;
+    top: 30px;
+    right: 30px;
     margin: 5px 5px 5px 5px;
     cursor: pointer;
     transition: all 1s;
@@ -199,7 +202,7 @@ a {
     transition: all 1s;
 }
 .show-menu #line1 {
-    transform: rotate(45deg) translate(0.65rem, -0.05rem);
+    transform: rotate(45deg) translate(10px, 3px);
     transition: all 0.5s;
 }
 .show-menu #line2 {
@@ -208,7 +211,7 @@ a {
     visibility: hidden;
 }
 .show-menu #line3 {
-    transform: rotate(-45deg) translate(0.8rem, -0.1rem);
+    transform: rotate(-45deg) translate(8px, -1px);
     transition: all 0.5s;
 }
 .hamburguer:hover {
@@ -224,8 +227,8 @@ a {
 }
 .line {
     margin: 5.5px 7px;
-    width: 1.4rem;
-    height: 3px;
+    width: 2.5rem;
+    height: .3rem;
     background-color: cornsilk;
     box-shadow: 2px 2px 2px rgba(94, 94, 94, 0.781);
 }
@@ -270,7 +273,7 @@ header {
 }
 .banner h1 {
     font-family: "Baloo 2";
-    font-size: 48pt;
+    font-size: 5rem;
     font-weight: 200;
     text-shadow: 8px 8px 15px rgba(94, 94, 94, 0.432);
     margin-bottom: 24px;
@@ -279,8 +282,8 @@ header {
 }
 .arrow {
     position: fixed;
-    width: 3rem;
-    height: 3rem;
+    width: 5rem;
+    height: 5rem;
     bottom: 30px;
     right: 20px;
     align-items: center;
@@ -294,8 +297,8 @@ header {
 }
 .arrow-up {
     position: fixed;
-    width: 3rem;
-    height: 3rem;
+    width: 5rem;
+    height: 5rem;
     bottom: 30px;
     right: 30px;
     cursor: pointer;
@@ -314,13 +317,13 @@ header {
     opacity: 1;
 }
 .fas.fa-arrow-up {
-    font-size: 1.8rem;
+    font-size: 3rem;
     cursor: pointer;
     color: white;
 }
 .banner p {
     font-family: "Josefin Slab";
-    font-size: 30pt;
+    font-size: 4.5rem;
     text-shadow: 8px 8px 15px rgba(94, 94, 94, 0.432);
     margin-bottom: 24px;
     animation: moveY 2s;
@@ -343,7 +346,7 @@ header {
     border-bottom-right-radius: 20px;
     border: 0;
     letter-spacing: 1px;
-    font-size: 10pt;
+    font-size: 1.3rem;
     cursor: pointer;
     transition: all 1s;
     opacity: 0.6;
@@ -401,7 +404,7 @@ header {
     font-family: "Mulish";
     margin-bottom: 40px;
     list-style: none;
-    font-size: 18pt;
+    font-size: 2.5rem;
 }
 .social {
     z-index: 100;
@@ -414,7 +417,7 @@ header {
     text-decoration: none;
     list-style: none;
     color: rgb(255, 255, 255);
-    font-size: 24pt;
+    font-size: 4rem;
     transition-duration: 0.5s;
 }
 .social i:hover {
@@ -469,7 +472,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
+    font-size: 2rem;
 }
 .copyright {
     position: absolute;
@@ -482,7 +485,7 @@ footer {
 }
 .icones i {
     padding: 4px;
-    font-size: 24pt;
+    font-size: 3.5rem;
 }
 i.fa-github {
     border-radius: 50%;

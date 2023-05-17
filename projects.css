@@ -9,35 +9,39 @@
 section#projetos {
   width: 100vw;
   height: 105vh;
-  opacity: 1;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   overflow: hidden;
   background-image: url(_images/question-mark-gab28eaba7_1920.jpg);
   background-size: cover;
   z-index: 10000;
   transition: all ease 1s;
 }
+.father-box{
+  display: flex;
+  align-items: center;
+  height: 100%;
 
+}
 .projects {
   display: flex;
-  margin: 2rem 0px;
-  margin-left: 0;
   width: 2000px;
   transition: all 1s;
   
 }
+.title-header{
+  text-align: center;
+}
 .card {
-  width: 19rem;
-  height: 29rem;
+  width: 30rem;
+  display: flex;
+  height: 45rem;
   border-radius: 15px;
-  margin: 0 0 0 0;
+  margin: 0px;
   position: relative;
+  text-align: center;
   justify-content: center;
   align-items: center;
   transform: scale(0.9);
-  transition: all 0.5s;
+  transition: all 0.5s ease 0s;
 }
 .card:hover {
   transform: scale(1);
@@ -110,19 +114,20 @@ section#projetos {
 }
 .box-projects{
   position: relative;
-  height: 480px;
+  height: 48rem;
   align-items: center;
   justify-content: center;
 }
 .arrow-left,
 .arrow-right{
+
   position:absolute;
   display: flex;
   background-color: #00000088;
   justify-content: center;
   align-items: center;
-  width: 70px;
-  height: 100%;
+  width: 7rem;
+  height: 48rem;
   z-index: 100;
   cursor: pointer;
   transition: all .5s;
@@ -135,12 +140,12 @@ section#projetos {
   opacity: 1;
 }
 .arrow-left{
-  left: 0;
+
 }
 .arrow-right{
   right: 0;
-  top: 0;
 }
+
 .fas.fa-angle-left,
 .fas.fa-angle-right{
   color: white;
