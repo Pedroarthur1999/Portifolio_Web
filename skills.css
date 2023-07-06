@@ -7,6 +7,10 @@
     }
 }
 
+@media (max-width: 720px) {
+   
+    
+}
 .sessao-conhecimentos {
     background-color: rgba(41, 41, 43, 0.986);    
 }
@@ -26,7 +30,7 @@
     animation: moveY_image 5s infinite alternate;
 }
 
-.secao-header h2 {
+.title_header h2 {
     font-size: 3.7rem;
     font-family: "Baloo 2";
     color: rgb(0, 217, 255);
@@ -44,10 +48,8 @@
 }
 
 .conhecimentos2 {
-    position: absolute;
-    color: white;
-    margin-top: 1em;
-    opacity: 1;
+   
+    opacity: 0;
 }
 
 .conhecimento-texto {
@@ -72,20 +74,7 @@
     margin-left: 5px;
 }
 
-.image-conhecimentos {
-    position: relative;
-    top: 100px;
-    left: 4rem;
-    width: 30rem;
-    height: 25rem;
-    display: flex;
-    align-items: center;
-    grid-column: 55/80;
-    justify-content: flex-start;
-    align-items: center;
-    grid-row: 2/5;
-    overflow: hidden;
-}
+
 .child-image{
     position: absolute;
     width: 100%;

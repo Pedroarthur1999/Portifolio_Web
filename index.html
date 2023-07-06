@@ -30,6 +30,21 @@
 
         <header>
 
+            <div class="show-menu-desktop">
+                <div class="menu-desktop">
+                    <div class="list-desktop">
+                        <nav>
+                            <ul>
+                                <li class="menu-item-desktop-1"><a href="#inicio">Home</a></li>
+                                <li class="menu-item-desktop-2"> <a href="#secao-conhecimento">Conhecimentos</a></li>
+                                <li class="menu-item-desktop-3"><a href="#projetos">Projetos</a></li>
+                                <li class="menu-item-desktop-4"><a href="#contato2">Contato</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
             <div class="image-wrapper" id="inicio">
                 <img src="_images/bg-full.jpg" alt="Developer" />
             </div>
@@ -47,7 +62,8 @@
         </header>
         <aside>
             <div class="sidebar">
-                <div class="image_photo"><img src="_images/perfil.jpg" alt=""></div>
+                <div class="image_photo">
+                    <img src="_images/image_profile.png" alt="Profile" width="150"></div>
                 <nav>
                     <ul class="menu">
                         <li class="menu-item-1"><a href="#inicio">Home</a></li>
@@ -81,8 +97,8 @@
                 <div class="traco"></div>
             </div>
             <div class="flex-skills">
-            <div  class="conhecimentos2" id="teste">
-    
+            <div  class="conhecimentos2" onscroll="visivel()" id="teste">
+                
                     <div class="conhecimento">
                         <div class="conhecimento-header">
                             <i class="fab fa-github"></i>
@@ -165,7 +181,7 @@
         <section id="projetos">
 
             <div class="secao-header">
-                <div class="title-header">
+                <div class="title_header">
                     <h2>Projetos</h2>
                     <div class="traco"></div>
                 </div>
@@ -226,8 +242,20 @@
                         </div>
                         <div class="card">
                             <div class="card-image-wrapper">
-                                <img src="_images/project To-do.png" alt="">
+                                <img src="_images/SQL.jpg" width="100" alt="Sql post">
                             </div>
+                            <div class="card-info">
+                                <h2>Sql</h2>
+                                <h3>Java</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aut amet pariatur distinctio voluptatibus culpa et sit maiores nobis velit. Labore fuga ratione, excepturi recusandae corporis voluptas eveniet iusto assumenda.</p>
+                                <a href="https://github.com/Pedroarthur1999/To_Do_App" target="blank"><button class="button-projects">Saiba Mais</button></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image-wrapper">
+                                <img src="_images/project To-do.png" alt="toDo page">
+                            </div>
+
                             <div class="card-info">
                                 <h2>To-do list</h2>
                                 <h3>JavaScript</h3>
@@ -246,6 +274,7 @@
                                 <a href="https://to-do-list-tau-pied.vercel.app/" target="blank"><button class="button-projects">Saiba Mais</button></a>
                             </div>
                         </div>
+                        
     
     
                     </div>
@@ -255,7 +284,7 @@
         </section>
         <section class="contato" id="contato2">
             
-            <div class="secao-header">
+            <div class="title_header">
                 <h2>Contato</h2>
                 
                 <div class="traco"></div>

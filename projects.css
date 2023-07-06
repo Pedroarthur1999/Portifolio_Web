@@ -33,9 +33,9 @@ section#projetos {
   text-align: center;
 }
 .card {
-  width: 40rem;
+  width: 30rem;
   display: flex;
-  height: 100%;
+  height: 75%;
   border-radius: 15px;
   margin: 0px;
   position: relative;

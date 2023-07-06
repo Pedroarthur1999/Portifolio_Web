@@ -130,7 +130,6 @@ button_left.addEventListener("click", function() {
 
 window.sr = ScrollReveal({reset: true});
 
-sr.reveal('.father-box', {duration: 2000})
-sr.reveal('conhecimento', {duration: 2000})
-sr.reveal('secao-header', {duration:2000})
-
+sr.reveal('.father-box', {duration: 1000})
+sr.reveal('secao-header', {duration:1000})
+ScrollReveal().reveal('.flex-test', {duration:1000})
