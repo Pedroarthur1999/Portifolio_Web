@@ -8,9 +8,7 @@
 }
 
 .sessao-conhecimentos {
-    position: relative;
-    display: block;
-    background-color: rgba(41, 41, 43, 0.986);
+    background-color: rgba(41, 41, 43, 0.986);    
 }
 
 .foto-conhecimento {
@@ -49,7 +47,7 @@
     position: absolute;
     color: white;
     margin-top: 1em;
-    opacity: 0;
+    opacity: 1;
 }
 
 .conhecimento-texto {
@@ -98,4 +96,13 @@
     width: 30rem;
     height: 25rem;
     animation: moveY_image 1.5s infinite alternate;
+}
+.flex-skills{
+    display: flex;
+    position: relative;
+    width: 100vw;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    bottom: 62px;
 }

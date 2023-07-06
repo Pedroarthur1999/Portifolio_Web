@@ -15,25 +15,27 @@ section#projetos {
   z-index: 10000;
   transition: all ease 1s;
 }
-.father-box{
+.father-box {
   display: flex;
   align-items: center;
+  position: relative;
+  bottom: 62px;
   height: 100%;
-
 }
 .projects {
   display: flex;
-  width: 2000px;
+  width: 2500px;
+  height: 100%;
   transition: all 1s;
-  
+  align-items: center;
 }
-.title-header{
+.title-header {
   text-align: center;
 }
 .card {
-  width: 30rem;
+  width: 40rem;
   display: flex;
-  height: 45rem;
+  height: 100%;
   border-radius: 15px;
   margin: 0px;
   position: relative;
@@ -47,7 +49,6 @@ section#projetos {
   transform: scale(1);
   transition: all 0.5s;
 }
-
 
 .card-image-wrapper {
   width: 100%;
@@ -68,7 +69,6 @@ section#projetos {
   height: 100%;
   transition: all 0.3s;
   background: rgba(85, 85, 85, 0.301);
-
 }
 .card-info:hover {
   opacity: 1;
@@ -83,10 +83,10 @@ section#projetos {
   -webkit-text-stroke-color: #ffffff;
   font-family: "Baloo 2";
 }
-.card-info h3{
+.card-info h3 {
   color: aqua;
 }
-.card-info p{
+.card-info p {
   color: #ffffff;
 }
 .button-projects {
@@ -112,16 +112,16 @@ section#projetos {
   opacity: 1;
   transition: all 1s;
 }
-.box-projects{
+.box-projects {
   position: relative;
-  height: 48rem;
+  display: flex;
+  height: 60rem;
   align-items: center;
   justify-content: center;
 }
 .arrow-left,
-.arrow-right{
-
-  position:absolute;
+.arrow-right {
+  position: absolute;
   display: flex;
   background-color: #00000088;
   justify-content: center;
@@ -130,27 +130,23 @@ section#projetos {
   height: 48rem;
   z-index: 100;
   cursor: pointer;
-  transition: all .5s;
-  opacity: .7;
+  transition: all 0.5s;
+  opacity: 0.7;
 }
 .arrow-left:hover,
-.arrow-right:hover{
-  transition: all .5s;
+.arrow-right:hover {
+  transition: all 0.5s;
   background-color: #000000cc;
   opacity: 1;
 }
-.arrow-left{
-
+.arrow-left {
 }
-.arrow-right{
+.arrow-right {
   right: 0;
 }
 
 .fas.fa-angle-left,
-.fas.fa-angle-right{
+.fas.fa-angle-right {
   color: white;
   font-size: 30px;
-  
-
 }
-
