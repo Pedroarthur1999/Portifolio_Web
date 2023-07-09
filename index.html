@@ -1,299 +1,421 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Apple-mobile-web-app-capable" content="yes" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="projects.css">
-    <link rel="stylesheet" href="skills.css">
-    <link rel="stylesheet" href="contact.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="_favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="_favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="_favicon/favicon-16x16.png" />
+    <link rel="stylesheet" href="projects.css" />
+    <link rel="stylesheet" href="skills.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="_favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="_favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="_favicon/favicon-16x16.png"
+    />
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <title>DevWeb</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="container">
+      <div class="hamburguer">
+        <div class="line" id="line1"></div>
+        <div class="line" id="line2"></div>
+        <div class="line" id="line3"></div>
+      </div>
 
-        <div class="hamburguer">
-            <div class="line" id="line1"></div>
-            <div class="line" id="line2"></div>
-            <div class="line" id="line3"></div>
+      <header>
+        <div class="show-menu-desktop">
+          <div class="menu-desktop">
+            <div class="image-menu-desktop">
+              <img src="_images/image_profile.png" alt="perfil menu-desktop" />
+            </div>
+            <div class="list-desktop">
+              <nav>
+                <ul>
+                  <li class="menu-item-desktop-1">
+                    <a href="#inicio">Home</a>
+                  </li>
+                  <li class="menu-item-desktop-2">
+                    <a href="#secao-conhecimento">Conhecimentos</a>
+                  </li>
+                  <li class="menu-item-desktop-3">
+                    <a href="#projetos">Projetos</a>
+                  </li>
+                  <li class="menu-item-desktop-4">
+                    <a href="#contato2">Contato</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
         </div>
 
-        <header>
+        <div class="image-wrapper" id="inicio">
+          <img src="_images/bg-full.jpg" alt="Developer" />
+        </div>
+        <div class="cover">
+          <div class="spin"></div>
+        </div>
+        <div class="banner">
+          <h1>Web Developer & Front End</h1>
+          <p>Pedro Arthur</p>
+          <button class="button">
+            <a href="#secao-conhecimento">Saiba Mais</a>
+          </button>
+        </div>
+      </header>
+      <aside>
+        <div class="sidebar">
+          <div class="image_photo">
+            <img src="_images/image_profile.png" alt="Profile" width="150" />
+          </div>
+          <nav>
+            <ul class="menu">
+              <li class="menu-item-1"><a href="#inicio">Home</a></li>
+              <li class="menu-item-2">
+                <a href="#secao-conhecimento">Conhecimentos</a>
+              </li>
+              <li class="menu-item-3"><a href="#projetos">Projetos</a></li>
+              <li class="menu-item-4"><a href="#contato2">Contato</a></li>
+            </ul>
+          </nav>
+          <div class="social">
+            <a href="https://github.com/Pedroarthur1999" target="blank">
+              <i class="fab fa-github"></i
+            ></a>
+            <a href="https://www.instagram.com/pedro_arthurdm/" target="blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/pedro-arthur-97a9ab211/"
+              target="blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </aside>
 
-            <div class="show-menu-desktop">
-                
-                <div class="menu-desktop">                
-                    <div class="image-menu-desktop">
-                        <img src="_images/image_profile.png" alt="perfil menu-desktop">
-                    </div>
-                    <div class="list-desktop">
-                        <nav>
-                            <ul>
-                                <li class="menu-item-desktop-1"><a href="#inicio">Home</a></li>
-                                <li class="menu-item-desktop-2"> <a href="#secao-conhecimento">Conhecimentos</a></li>
-                                <li class="menu-item-desktop-3"><a href="#projetos">Projetos</a></li>
-                                <li class="menu-item-desktop-4"><a href="#contato2">Contato</a></li>
-                            </ul>
-                        </nav>
-                    </div>
+      <section class="sessao-conhecimentos" id="secao-conhecimento">
+        <div class="foto-conhecimento">
+          <!--<figure><img src="_images/bg-section-conhecimentos (2).jpg" alt="dev"/></figure>-->
+        </div>
+        <div class="secao-header" id="secao-conhecimento">
+          <div class="title_header">
+            <h2>Conhecimentos</h2>
+          </div>
+          <div class="traco"></div>
+        </div>
+        <div class="flex-skills">
+          <div class="conhecimentos2" onscroll="visivel()" id="teste">
+            <div class="conhecimento">
+              <div class="conhecimento-header">
+                <i class="fab fa-github"></i>
+                <h3>GitHub</h3>
+              </div>
+              <div class="conhecimento-texto">
+                <p>
+                  GitHub é uma plataforma de hospedagem de código-fonte e
+                  arquivos com controle de versão usando o Git. Ele permite que
+                  programadores, utilitários ou qualquer usuário cadastrado na
+                  plataforma contribuam em projetos privados e/ou Open Source.
+                </p>
+              </div>
+            </div>
+            <div class="conhecimento">
+              <div class="conhecimento-header">
+                <i class="fab fa-html5"></i>
+                <h3>Html5</h3>
+              </div>
+              <div class="conhecimento-texto">
+                <p>
+                  HTML5 é uma linguagem de marcação para a World Wide Web e é
+                  uma tecnologia chave da Internet, originalmente proposto por
+                  Opera Software.
+                </p>
+              </div>
+            </div>
+
+            <div class="conhecimento">
+              <div class="conhecimento-header">
+                <i class="fab fa-css3-alt"></i>
+                <h3>Css3</h3>
+              </div>
+              <div class="conhecimento-texto">
+                <p>
+                  CSS3 é a terceira mais nova versão das famosas Cascading Style
+                  Sheets, pela qual se define estilos para um projeto web. Com
+                  efeitos de transição, imagem, imagem de fundo/background e
+                  outros, pode-se criar estilos únicos para seus projetos web,
+                  alterando diversos aspectos de design no layout da página.
+                </p>
+              </div>
+            </div>
+            <div class="conhecimento">
+              <div class="conhecimento-header">
+                <i class="fab fa-js-square"></i>
+                <h3>Js</h3>
+              </div>
+              <div class="conhecimento-texto">
+                <p>
+                  JavaScript é uma linguagem de programação interpretada
+                  estruturada, de script em alto nível com tipagem dinâmica
+                  fraca e multiparadigma.
+                </p>
+              </div>
+            </div>
+            <div class="conhecimento">
+              <div class="conhecimento-header">
+                <i class="fab fa-react"></i>
+                <h3>React</h3>
+              </div>
+              <div class="conhecimento-texto">
+                <p>
+                  O React é uma biblioteca JavaScript de código aberto com foco
+                  em criar interfaces de usuário em páginas web.
+                </p>
+              </div>
+            </div>
+            <div class="conhecimento">
+              <div class="conhecimento-header">
+                <i class="fab fa-git-alt"></i>
+                <h3>Git</h3>
+              </div>
+              <div class="conhecimento-texto">
+                <p>
+                  Git é um sistema de controle de versões distribuído, usado
+                  principalmente no desenvolvimento de software, mas pode ser
+                  usado para registrar o histórico de edições de qualquer tipo
+                  de arquivo.
+                </p>
+              </div>
+            </div>
+            <div class="image-conhecimentos">
+              <div class="child-image">
+                <img src="_images/conhecimentos.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projetos">
+        <div class="secao-header">
+          <div class="title_header">
+            <h2>Projetos</h2>
+            <div class="traco"></div>
+          </div>
+        </div>
+        <div class="bg_project"></div>
+        <div class="father-box">
+          <div class="arrow-left"><i class="fas fa-angle-left"></i></div>
+          <div class="box-projects">
+            <div class="projects">
+              <div class="card">
+                <div class="card-image-wrapper">
+                  <img src="_images/glasses-g026f4e1fb_640.jpg" alt="" />
                 </div>
-            </div>
-
-            <div class="image-wrapper" id="inicio">
-                <img src="_images/bg-full.jpg" alt="Developer" />
-            </div>
-            <div class="cover">
-                <div class="spin"> </div>
-            </div>
-            <div class="banner">
-                <h1>Web Developer & Front End</h1>
-                <p>Pedro Arthur</p>
-                <button class="button"><a href="#secao-conhecimento">Saiba Mais</a></button>
-
-
-            </div>
-
-        </header>
-        <aside>
-            <div class="sidebar">
-                <div class="image_photo">
-                    <img src="_images/image_profile.png" alt="Profile" width="150"></div>
-                <nav>
-                    <ul class="menu">
-                        <li class="menu-item-1"><a href="#inicio">Home</a></li>
-                        <li class="menu-item-2"> <a href="#secao-conhecimento">Conhecimentos</a></li>
-                        <li class="menu-item-3"><a href="#projetos">Projetos</a></li>
-                        <li class="menu-item-4"><a href="#contato2">Contato</a></li>
-                    </ul>
-                </nav>
-                <div class="social">
-                    <a href="https://github.com/Pedroarthur1999" target="blank">
-                        <i class="fab fa-github"></i></a>
-                    <a href="https://www.instagram.com/pedro_arthurdm/" target="blank"><i class="fab fa-instagram"></i
-              ></a>
-                    <a href="https://www.linkedin.com/in/pedro-arthur-97a9ab211/" target="blank"><i class="fab fa-linkedin"></i
-              ></a>
+                <div class="card-info">
+                  <h2>Google Glass</h2>
+                  <h3>HTML5, CSS3, Js</h3>
+                  <p>
+                    O projeto do site Google Glass foi desenvolvido como parte
+                    do meu portfólio para demonstrar minhas habilidades em
+                    desenvolvimento web utilizando HTML5, CSS3 e JavaScript. O
+                    objetivo principal do projeto foi criar um site informativo
+                    e interativo para apresentar os recursos e funcionalidades
+                    do Google Glass, uma tecnologia revolucionária de realidade
+                    aumentada.
+                  </p>
+                  <a
+                    href="//googleglassfirstproject.netlify.app/"
+                    target="blank"
+                    ><button class="button-projects">Saiba Mais</button></a
+                  >
                 </div>
-            </div>
-        </aside>
+              </div>
+              <div class="card">
+                <div class="card-image-wrapper">
+                  <img src="_images/project To-do.png" alt="" />
+                </div>
+                <div class="card-info">
+                  <h2>To-do list</h2>
+                  <h3>HTML5 | CSS3 | JavaScript</h3>
+                  <p>
+                    O projeto To-do-List é um exemplo do desenvolvimento web,
+                    utilizando HTML, CSS e JavaScript. O objetivo do projeto foi
+                    criar uma aplicação simples e intuitiva para gerenciar
+                    tarefas, permitindo que os usuários organizem suas
+                    atividades diárias de maneira eficiente.
+                  </p>
+                  <a
+                    href="https://to-do-list-tau-pied.vercel.app/"
+                    target="blank"
+                    ><button class="button-projects">Saiba Mais</button></a
+                  >
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image-wrapper">
+                  <img src="_images/php-gfe5a379a4_640.jpg" alt="" />
+                </div>
+                <div class="card-info">
+                  <h2>Banco de dados</h2>
+                  <h3>PHP | MySQL</h3>
+                  <p>
+                    O projeto que desenvolvi utilizando PHP e banco de dados é
+                    um exemplo prático de programação web do lado do servidor e
+                    gerenciamento de dados. O objetivo principal foi criar um
+                    sistema dinâmico e interativo capaz de armazenar, gerenciar
+                    e exibir informações de forma eficiente. Utilizando a
+                    linguagem PHP, desenvolvi a lógica e a estrutura do sistema,
+                    incluindo o processamento de formulários, a validação de
+                    dados e a interação com o banco de dados. Através do PHP,
+                    criei uma aplicação que permite aos usuários realizar
+                    diferentes ações, como cadastro, login, pesquisa e
+                    atualização de informações.
+                  </p>
+                  <a
+                    href="http://pedromedeiros.epizy.com/
+                            "
+                    target="
+                            blank"
+                    ><button class="button-projects">Saiba Mais</button></a
+                  >
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image-wrapper">
+                  <img src="_images/time-g19f2b7a9e_640.png" alt="" />
+                </div>
+                <div class="card-info">
+                  <h2>Cronômetro</h2>
+                  <h3>HTML5 | CSS3 | JavaScript</h3>
+                  <p>
+                    O projeto do cronômetro que desenvolvi utilizando HTML, CSS
+                    e JavaScript é um exemplo prático das minhas habilidades em
+                    desenvolvimento web e programação do lado do cliente. O
+                    objetivo principal foi criar um cronômetro funcional e
+                    intuitivo que permitisse aos usuários medir e controlar o
+                    tempo com precisão.
+                  </p>
+                  <a
+                    href="https://stopwatch-with-javascript-project.netlify.app/"
+                    target="_blank"
+                    ><button class="button-projects">Saiba Mais</button></a
+                  >
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image-wrapper">
+                  <img src="_images/SQL.jpg" width="100" alt="Sql post" />
+                </div>
+                <div class="card-info">
+                  <h2>Sql</h2>
+                  <h3>Java | MySQL</h3>
+                  <p>
+                    As tecnologias utilizadas neste projeto foram a linguagem
+                    Java, o banco de dados MySQL. A aplicação permite a criação
+                    de projetos e tarefas, bem como a atribuição de
+                    responsáveis, datas de entrega e status de conclusão. Para o
+                    armazenamento dos dados, foi utilizado o banco de dados
+                    MySQL junto ao programa XAMPP para facilitar a criação e
+                    comunicação do banco de dados, garantindo a confiabilidade e
+                    segurança das informações. O projeto também conta com uma
+                    página de login e cadastro, possuindo uma verificação dos
+                    dados digitados nas caixas de texto e carregando os projetos
+                    e tarefas de acordo com cada usuário.
+                  </p>
+                  <a
+                    href="https://github.com/Pedroarthur1999/To_Do_App"
+                    target="blank"
+                    ><button class="button-projects">Saiba Mais</button></a
+                  >
+                  <a href="/To_Do_App.zip" download="To_Do_App"
+                    ><i
+                      class="fa-solid fa-download"
+                      style="
+                        color: white;
+                        position: relative;
+                        top: 13px;
+                        left: 5px;
+                      "
+                    ></i
+                  ></a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image-wrapper">
+                  <img
+                    src="https://img.freepik.com/vetores-gratis/lindo-fundo-de-nave-espacial-com-design-plano_23-2147914563.jpg?w=2000"
+                    alt="toDo page"
+                  />
+                </div>
 
-        <section class="sessao-conhecimentos" id="secao-conhecimento">
+                <div class="card-info">
+                  <h2>Space Figther</h2>
+                  <h3>HTML5 | CSS3 | JavaScript</h3>
+                  <p>
+                    Utilizando a biblioteca p5.js, desenvolvi os elementos
+                    gráficos e a lógica do jogo. Criei uma animação fluída e
+                    estilizada para a nave espacial e os demais objetos em
+                    movimento no jogo. Além disso, implementei interações de
+                    usuário, como controles de teclado, para permitir que os
+                    jogadores naveguem pela tela e ataquem inimigos.
+                  </p>
+                  <a
+                    href="https://github.com/Pedroarthur1999/Game-with-p5.js-editor"
+                    target="blank"
+                    ><button class="button-projects">Saiba Mais</button></a
+                  >
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image-wrapper">
+                  <img
+                    src="https://www.etecubatao.com.br/wp-content/uploads/2022/06/calendario-sede.png"
+                    alt=""
+                  />
+                </div>
+                <div class="card-info">
+                  <h2>Qual a sua idade?</h2>
+                  <h3>HTML5 | CSS3 | JavaScript</h3>
+                  <p>
+                   O projeto de adivinhação da idade a partir de uma data é um exemplo divertido do meu trabalho em desenvolvimento web, onde utilizei HTML, CSS e JavaScript para criar uma aplicação interativa. O objetivo principal do projeto foi criar uma ferramenta que pudesse estimar a idade de um usuário com base em uma data fornecida.
+                  </p>
+                  <a
+                    href="https://verificar-idade-239123.netlify.app/"
+                    target="blank"
+                    ><button class="button-projects">Saiba Mais</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="arrow-right"><i class="fas fa-angle-right"></i></div>
+        </div>
+      </section>
+      <section class="contato" id="contato2">
+        <div class="title_header">
+          <h2>Contato</h2>
 
-            
-            <div class="foto-conhecimento">
-                <!--<figure><img src="_images/bg-section-conhecimentos (2).jpg" alt="dev"/></figure>-->
-            </div>
-            <div class="secao-header"id="secao-conhecimento">
-                
-                <div class="title_header">
-                    <h2>Conhecimentos</h2>
-                </div>
-                <div class="traco"></div>
-            </div>
-            <div class="flex-skills">
-            <div  class="conhecimentos2" onscroll="visivel()" id="teste">
-                
-                    <div class="conhecimento">
-                        <div class="conhecimento-header">
-                            <i class="fab fa-github"></i>
-                            <h3>GitHub</h3>
-                        </div>
-                        <div class="conhecimento-texto">
-                            <p>
-                                GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. Ele permite que programadores, utilitários ou qualquer usuário cadastrado na plataforma contribuam em projetos privados e/ou Open Source.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="conhecimento">
-                        <div class="conhecimento-header">
-                            <i class="fab fa-html5"></i>
-                            <h3>Html5</h3>
-                        </div>
-                        <p>
-                            <div class="conhecimento-texto">
-                                HTML5 é uma linguagem de marcação para a World Wide Web e é uma tecnologia chave da Internet, originalmente proposto por Opera Software.
-                            </div>
-                        </p>
-                    </div>
-    
-                    <div class="conhecimento">
-    
-                        <div class="conhecimento-header">
-                            <i class="fab fa-css3-alt"></i>
-                            <h3>Css3</h3>
-                        </div>
-                        <div class="conhecimento-texto">
-                            <p>
-                                CSS3 é a terceira mais nova versão das famosas Cascading Style Sheets, pela qual se define estilos para um projeto web. Com efeitos de transição, imagem, imagem de fundo/background e outros, pode-se criar estilos únicos para seus projetos web, alterando
-                                diversos aspectos de design no layout da página.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="conhecimento">
-                        <div class="conhecimento-header">
-                            <i class="fab fa-js-square"></i>
-                            <h3>Js</h3>
-                        </div>
-                        <div class="conhecimento-texto">
-                            <p>
-                                JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.
-    
-                            </p>
-                        </div>
-                    </div>
-                    <div class="conhecimento">
-                        <div class="conhecimento-header">
-                            <i class="fab fa-react"></i>
-                            <h3>React</h3>
-                        </div>
-                        <div class="conhecimento-texto">
-                            <p>
-                                O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="conhecimento">
-                        <div class="conhecimento-header">
-                            <i class="fab fa-git-alt "></i>
-                            <h3>Git</h3>
-                        </div>
-                        <div class="conhecimento-texto">
-                            <p>
-                                Git é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo.
-                            </p>
-                        </div>
-    
-    
-                    </div>
-                    <div class="image-conhecimentos">
-                        
-                        <div class="child-image"><img src="_images/conhecimentos.png" alt=""></div>
-                    </div>
-                </div>
-                </div>
-        </section>
-        <section id="projetos">
-
-            <div class="secao-header">
-                <div class="title_header">
-                    <h2>Projetos</h2>
-                    <div class="traco"></div>
-                </div>
-            </div>
-            <div class="bg_project">
-            </div>
-<div class="father-box">
-    
-    <div class="arrow-left"><i class="fas fa-angle-left"></i></div>
-                <div class="box-projects">
-                    <div class="projects">
-                        <div class="card">
-                            <div class="card-image-wrapper">
-                                <img src="_images/glasses-g026f4e1fb_640.jpg" alt="">
-                            </div>
-                            <div class="card-info">
-                                <h2>Google Glass</h2>
-                                <h3>HTML5, CSS3, Js</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aut nihil aliquid laboriosam fugit nemo sint voluptates optio deleniti voluptatibus molestias veritatis, vel libero cumque iusto at nulla facere cum?</p>
-                                <a href=" https://pedroarthur1999.github.io/Project_Google_Glass/" target="blank"><button class="button-projects">Saiba Mais</button></a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-image-wrapper">
-                                <img src="_images/project To-do.png" alt="">
-                            </div>
-                            <div class="card-info">
-                                <h2>To-do list</h2>
-                                <h3>JavaScript</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aut amet pariatur distinctio voluptatibus culpa et sit maiores nobis velit. Labore fuga ratione, excepturi recusandae corporis voluptas eveniet iusto assumenda.</p>
-                                <a href="https://to-do-list-tau-pied.vercel.app/" target="blank"><button class="button-projects">Saiba Mais</button></a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-image-wrapper">
-                                <img src="_images/php-gfe5a379a4_640.jpg" alt="">
-    
-                            </div>
-                            <div class="card-info">
-                                <h2>Banco de dados</h2>
-                                <h3>PHP, MySQL</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi incidunt, nostrum quo error sunt quia labore aliquid praesentium repellat! Veniam explicabo sunt fugit nihil placeat reiciendis tenetur similique voluptates odio.</p>
-                                <a href="http://pedromedeiros.epizy.com/
-                            " target="
-                            blank"><button class="button-projects">Saiba Mais</button></a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-image-wrapper">
-                                <img src="_images/time-g19f2b7a9e_640.png" alt="">
-                            </div>
-                            <div class="card-info">
-                                <h2>Cronômetro</h2>
-                                <h3>HTML5, CSS3, Js</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolorum, inventore, suscipit molestiae facere veniam quis quibusdam quae id nemo reprehenderit. Assumenda ex obcaecati tenetur voluptatem aut velit natus modi?</p>
-                                <button class="button-projects">Saiba Mais</button>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-image-wrapper">
-                                <img src="_images/SQL.jpg" width="100" alt="Sql post">
-                            </div>
-                            <div class="card-info">
-                                <h2>Sql</h2>
-                                <h3>Java</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aut amet pariatur distinctio voluptatibus culpa et sit maiores nobis velit. Labore fuga ratione, excepturi recusandae corporis voluptas eveniet iusto assumenda.</p>
-                                <a href="https://github.com/Pedroarthur1999/To_Do_App" target="blank"><button class="button-projects">Saiba Mais</button></a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-image-wrapper">
-                                <img src="_images/project To-do.png" alt="toDo page">
-                            </div>
-
-                            <div class="card-info">
-                                <h2>To-do list</h2>
-                                <h3>JavaScript</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aut amet pariatur distinctio voluptatibus culpa et sit maiores nobis velit. Labore fuga ratione, excepturi recusandae corporis voluptas eveniet iusto assumenda.</p>
-                                <a href="https://to-do-list-tau-pied.vercel.app/" target="blank"><button class="button-projects">Saiba Mais</button></a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-image-wrapper">
-                                <img src="_images/project To-do.png" alt="">
-                            </div>
-                            <div class="card-info">
-                                <h2>To-do list</h2>
-                                <h3>JavaScript</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aut amet pariatur distinctio voluptatibus culpa et sit maiores nobis velit. Labore fuga ratione, excepturi recusandae corporis voluptas eveniet iusto assumenda.</p>
-                                <a href="https://to-do-list-tau-pied.vercel.app/" target="blank"><button class="button-projects">Saiba Mais</button></a>
-                            </div>
-                        </div>
-                        
-    
-    
-                    </div>
-                </div>
-                <div class="arrow-right"><i class="fas fa-angle-right"></i></div>
-</div>
-        </section>
-        <section class="contato" id="contato2">
-            
-            <div class="title_header">
-                <h2>Contato</h2>
-                
-                <div class="traco"></div>
-            </div>
-            <!-- <div class="card-adress">
+          <div class="traco"></div>
+        </div>
+        <!-- <div class="card-adress">
                 <div class="info">
                     <div class="address">
                         <i class="bi bi-geo-alt"></i>
@@ -312,79 +434,126 @@
                     </div>
                 </div>
             </div> -->
-            <div class="flex-test">
-                <div class="contato-wrapper">
-                    <!-- <div class="maps">
+        <div class="flex-test">
+          <div class="contato-wrapper">
+            <!-- <div class="maps">
                 <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127020.60414174934!2d-35.29245559539694!3d-5.799914624945801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b3aaac26460531%3A0x5d8b404cf00fed69!2sNatal%2C%20State%20of%20Rio%20Grande%20do%20Norte!5e0!3m2!1sen!2sbr!4v1631327721788!5m2!1sen!2sbr"
                 frameborder="0"  style="border:0;" allowfullscreen></iframe>
               </div> -->
-    
-    
-                    <div class="contato-left"></div>
-                    <div class="contato-right">
-                        <form action="https://api.staticforms.xyz/submit" method="POST">
-                            <input type="hidden" name="accessKey" value="772ad302-a925-4866-80f5-0837e0ca5408">
-                            <div class="input-group">
-                                <input type="text" class="field" id="nome" name="name" required>
-                                <label for="nome" class="field-label">Nome</label>
-                            </div>
-                            <div class="input-group">
-                                <input type="text" class="field" id="email2" name="email" required>
-                                <label for="email" class="field-label">E-mail</label>
-                            </div>
-                            <div class="input-group">
-                                <textarea class="field" id="mensagem" name="message"></textarea>
-                                <label for="mensagem" class="field-label">Mensagem</label>
-                                <input type="hidden" name="redirectTo" value="https://pedroarthur.netlify.app/#contato2">
-                            </div>
-                            <button type="submit" class="btn btn-submit">Enviar</button>
-    
-    
-                        </form>
-                        <div class="down_curriculum"> <a href="C.V.pdf" download="Curriculum_vitae"><i class="fa-solid fa-download"></i>Curriculum Vitae</a></div>
-                    </div>
-</div>
 
-        </section>
-        <footer id="footer">
-            <div class="container-footer">
-                <div class="nav-footer">
-                    <div class="logo-footer">
-                        <figure class="image-footer"><img src="_images/favicon-32x32.png" alt="logo-pedro"></figure>
-                    </div>
-                    <nav>
-                        <ul>
-                            <li><a href="#inicio"><span style="font-weight: bold;">Home</span></a></li>
-                            <li> <a href="#secao-conhecimento">Conhecimentos</a></li>
-                            <li><a href="#projetos">Projetos</a></li>
-                            <li ><a href="#contato2">Contato</a></li>
-                        </ul>
-                    </nav>
-                    <div class="icones">
-                        <i class="fab fa-github"></i>
-                        <i class="fab fa-linkedin"></i>
-                        <i class="fab fa-instagram"></i>
-                    </div>
-                    
+            <div class="contato-left"></div>
+            <div class="contato-right">
+              <form action="https://api.staticforms.xyz/submit" method="POST">
+                <input
+                  type="hidden"
+                  name="accessKey"
+                  value="772ad302-a925-4866-80f5-0837e0ca5408"
+                />
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="field"
+                    id="nome"
+                    name="name"
+                    required
+                  />
+                  <label for="nome" class="field-label">Nome</label>
                 </div>
-                <div class="flex-footer">                
-                    <button onclick="location.href='mailto:pedroarthur1999@gmail.com'">Enviar email</button>
-                                </div>
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="field"
+                    id="email2"
+                    name="email"
+                    required
+                  />
+                  <label for="email" class="field-label">E-mail</label>
                 </div>
-            <div class="copyright">
-                &copy; 2023 - <strong style="text-transform: uppercase;"><span> &nbsp;Pedro Dev</span></strong>
+                <div class="input-group">
+                  <textarea
+                    class="field"
+                    id="mensagem"
+                    name="message"
+                  ></textarea>
+                  <label for="mensagem" class="field-label">Mensagem</label>
+                  <input
+                    type="hidden"
+                    name="redirectTo"
+                    value="https://pedroarthur.netlify.app/#contato2"
+                  />
+                </div>
+                <button type="submit" class="btn btn-submit">Enviar</button>
+              </form>
+              <div class="down_curriculum">
+                <a href="C.V.pdf" download="Curriculum_vitae"
+                  ><i class="fa-solid fa-download"></i>Curriculum Vitae</a
+                >
+              </div>
             </div>
-        </footer>
-        <!-- End  Footer -->
-        <div class="arrow" id="myP" onclick="spin()">
-
-            <i class="fas fa-arrow-up"></i>
-
+          </div>
         </div>
+      </section>
+      <footer id="footer">
+        <div class="container-footer">
+          <div class="nav-footer">
+            <div class="logo-footer">
+              <figure class="image-footer">
+                <img src="_images/favicon-32x32.png" alt="logo-pedro" />
+              </figure>
+            </div>
+            <nav>
+              <ul>
+                <li>
+                  <a href="#inicio"
+                    ><span style="font-weight: bold">Home</span></a
+                  >
+                </li>
+                <li><a href="#secao-conhecimento">Conhecimentos</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato2">Contato</a></li>
+              </ul>
+            </nav>
+            <div class="icones">
+              <a href="https://github.com/Pedroarthur1999" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/pedro-arthur-97a9ab211/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/pedro_arthurdm/"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/pedroarthur.kimura"
+                target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </div>
+          </div>
+          <div class="flex-footer">
+            <button onclick="location.href='mailto:pedroarthur1999@gmail.com'">
+              Enviar email
+            </button>
+          </div>
         </div>
+        <div class="copyright">
+          &copy; 2023 -
+          <strong style="text-transform: uppercase"
+            ><span> &nbsp;Pedro Dev</span></strong
+          >
+        </div>
+      </footer>
+      <!-- End  Footer -->
+      <div class="arrow" id="myP" onclick="spin()">
+        <i class="fas fa-arrow-up"></i>
+      </div>
+    </div>
 
-        <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
