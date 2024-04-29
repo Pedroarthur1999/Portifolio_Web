@@ -1,0 +1,8 @@
+# Diretório de dependências
+node_modules/
+
+# Cache do npm
+.npm
+
+# Arquivo de bloqueio de versão
+package-lock.json
