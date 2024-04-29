@@ -1,11 +1,12 @@
 let hamburguer = document.querySelector(".hamburguer");
+let conteudos = document.querySelector(".menu-item-2");
 
-hamburguer.addEventListener("click", function() {
+
+hamburguer.addEventListener("click", function () {
     let sideBar = document
         .querySelector(".container")
         .classList.toggle("show-menu");
 });
-let conteudos = document.querySelector(".menu-item-2");
 
 const menuLinks = document.querySelectorAll('a[href^="#"]');
 
@@ -16,7 +17,7 @@ function getDistanceFromTheTop(element) {
 
 function scrollToSection(event) {
     event.preventDefault();
-    const distanceFromTheTop = getDistanceFromTheTop(event.target)-90;
+    const distanceFromTheTop = getDistanceFromTheTop(event.target) - 90;
     smoothScrollTo(0, distanceFromTheTop, 1300);
 }
 
@@ -50,7 +51,7 @@ function smoothScrollTo(endX, endY, duration) {
     }, 1000 / 60);
 }
 
-window.onscroll = function() {
+window.onscroll = function () {
     myFunction();
     visivel();
 };
@@ -91,19 +92,19 @@ function spin() {
         top: 0,
         behavior: "smooth",
     });
-    setTimeout(function() {
+    setTimeout(function () {
         document.querySelector(".spin").classList.toggle("-true");
     }, 0);
 
-    setTimeout(function() {
+    setTimeout(function () {
         document.querySelector(".spin").classList.remove("-true");
     }, 1 * 1000);
 
-    setTimeout(function() {
+    setTimeout(function () {
         document.querySelector(".cover").classList.toggle("-true");
     }, 0);
 
-    setTimeout(function() {
+    setTimeout(function () {
         document.querySelector(".cover").classList.toggle("-true");
     }, 1000);
 }
@@ -113,14 +114,14 @@ const projects_row = document.querySelector(".projects");
 
 let row_right = 0;
 
-button_right.addEventListener("click", function() {
+button_right.addEventListener("click", function () {
     if (row_right > 288 * 2 * -1) {
         row_right -= 288;
         projects_row.style.transform = `translateX(${row_right}px)`; //row_right + "px";
     }
 });
 
-button_left.addEventListener("click", function() {
+button_left.addEventListener("click", function () {
     if (row_right < 0) {
         row_right += 288;
         projects_row.style.transform = `translateX(${row_right}px)`;
@@ -128,8 +129,8 @@ button_left.addEventListener("click", function() {
     }
 });
 
-window.sr = ScrollReveal({reset: true});
+window.sr = ScrollReveal({ reset: true });
 
-sr.reveal('.father-box', {duration: 1000})
-sr.reveal('secao-header', {duration:1000})
-ScrollReveal().reveal('.flex-test', {duration:1000})
+sr.reveal('.father-box', { duration: 1000 })
+sr.reveal('secao-header', { duration: 1000 })
+ScrollReveal().reveal('.flex-test', { duration: 1000 })
